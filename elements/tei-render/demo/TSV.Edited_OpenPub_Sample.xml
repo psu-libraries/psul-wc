@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Sea Voyage</title>
+                <author>John Fletcher and Philip Massinger</author>
+                <respStmt>
+                    <resp>Consulting Editor</resp>
+                    <persName xml:id="cmlb">Claire M. L. Bourne</persName>
+                </respStmt>
+                <respStmt><resp>General Editor</resp>
+                    <persName xml:id="dl">David LeBlanc</persName> 
+                </respStmt>
+                <respStmt><resp>Student Editors</resp>
+                    <name xml:id="student">Students of Claire M. L. Bourne's Fall 2019 ENGL 445 "Shakespeare's Contemporaries" Course</name>
+                </respStmt>
+                <respStmt><resp>Project Manager</resp>
+                    <persName xml:id="hf">Heather Froehlich</persName>
+                </respStmt>
+                <respStmt><resp>Coding Consultant</resp>
+                    <persName xml:id="jr">John Russell</persName>
+                </respStmt>
+                <respStmt><resp>Annotator(s)</resp>
+                    <name xml:id="formerOwner">Former Owner - Author of Handwritten Annotations</name>
+                </respStmt>
+            </titleStmt>
+        </fileDesc>
+        <encodingDesc>
+            <p>This document is a student-edited XML version of <hi rend="italic">The Sea Voyage</hi> based on Pennsylvania State University's
+                annotated copy of the 1647 Beaumont &#38; Fletcher first folio. The student body of Claire M. L. Bourne's fall 2019 ENGL 445 "Shakespeare's
+                Contemporaries" course determined many of the editorial principles themselves. Where necessary, these have been complemented by principles
+                and practices established by the general editor of the play in consultation with the consulting editor. The intention of this edition is to
+                present a working XML version of the play that honors student contributions and editorial decisions.</p>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <note>This cast list has been adapted from the 1679 folio edition of Beaumont and Fletcher's <hi rend="italic">Fifty Comedies and Tragedies</hi>. Spelling has been regularized based on how names appear in the text.</note>
+            <castList>
+                <castItem>
+                    <role xml:id="alb">Albert</role>
+                </castItem>
+                <castGroup xml:id="gents">
+                    <note>Used in stage directions to refer to an undefined collection of characters that may include one or all of the members of the group "Gentlemen."</note>
+                    <head>Gentlemen</head>
+                    <castItem>
+                        <role xml:id="tib">Tibalt du Pont</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="lam">Lamure</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="fran">Franville</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="mor">Morillat</role>
+                    </castItem>
+                </castGroup>
+                <castItem>
+                    <role xml:id="mast">Master of the Ship</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="boat">Boatswain</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="seb">Sebastian</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="nic">Nicusa</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="ray">Raymond</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="sur">Surgeon</role>
+                </castItem>
+                <castGroup xml:id="sails">
+                    <note>Used in stage directions to refer to an undefined collection of characters that may include one or all of the members of the group "Sailors."</note>
+                    <head>Sailors</head>
+                    <castItem>
+                        <role xml:id="sailf1">French Sailor 1</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="sailf2">French Sailor 2</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="sailp1">Portuguese Sailor 1</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="sailp2">Portuguese Sailor 2</role>
+                    </castItem>
+                </castGroup>
+                <castItem>
+                    <role xml:id="amin">Aminta</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="ros">Rosella</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="cla">Clarinda</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="hip">Hippolita</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="cro">Crocale</role>
+                </castItem>
+                <castItem>
+                    <role xml:id="jul">Juletta</role>
+                </castItem>
+            </castList>
+        </front>
+        <body>
+            <div type="play" xml:id="seaVoyage">
+                <fw type="pageNum">1</fw>
+                <head>
+                    <title>THE SEA VOYAGE</title>
+                </head>
+                <div type="act" n="1">
+                    <div type="scene" n="1">
+                        <head><hi rend="italic">Actus Primus. Scaena Prima.</hi></head>
+                        <pb n="TSV-001" facs="https://digital.libraries.psu.edu/digital/collection/emblem/id/4815/rec/4"/>
+                        <cb n="1"/>
+                        <stage resp="#comp" type="setting" place="left">A Tempest. Thunder and lightning. <note resp="#student" type="context"><hi rend="italic">Thunder and lightning:</hi> In early modern plays, the stage direction "thunder and lightning" was very common and produced in a variety of different ways. In this play, it's assumed that the stage direction "thunder and lightning" is directly linked to a storm, but this was rarely the case in many early modern plays. <bibl>Dessen, Alan C., and Leslie Thomson. <title>A Dictionary of Stage Directions in English Drama, 1580-1642.</title> Cambridge University Press, 1999.</bibl> Making the sounds of thunder and lightning, then, could have been done through drums, flashes of fire, and fireworks. Thunder and lightning can be considered a sound cue and therefore grouped with others such as "trumpet" and "music." These types of stage directions were often created in the tiring house, as they were either directed toward or written by the bookkeeper who would then produce the stage directions on cue. <bibl>Thomson, Leslie. “The Meaning of ‘Thunder and Lightning’: Stage Directions and Audience Expectations.” <title>Early Theatre</title>, vol. 2, 1999, pp. 11–24. JSTOR, www.jstor.org/stable/43499089.</bibl> In most cases though, the effects of thunder and lightning were linked to the supernatural, and accompanied figures such devils and witches, which would descend from a trapdoor that signified the underworld. An audience could almost always expect to view something supernatural with this particular stage direction. <bibl>Thomson, Leslie. “The Meaning of ‘Thunder and Lightning’: Stage Directions and Audience Expectations.” <title>Early Theatre</title>, vol. 2, 1999, pp. 11–24. JSTOR, www.jstor.org/stable/43499089.</bibl></note></stage>
+                        <stage resp="#comp" type="entrance" place="left" who="#mast #sails">Enter MASTER and two SAILORS.</stage>
+                        <sp who="#mast">
+                            <speaker>MASTER</speaker>
+                            <lg>
+                                <l>Lay her aloof<note resp="#student #dl" type="gloss">aloof: to the windward side</note>! <seg resp="#student" type="place">The sea</seg> grows dangerous!</l>
+                                <l>How it spits against <seg resp="#student" type="place">the clouds</seg>, how it capers<note resp="#student" type="gloss">capers: dances or leaps</note>,</l>
+                                <l>And how the fiery element frights it back! <stage resp="#student" type="business" place="right">Lightning.</stage></l>
+                                <l>There be <seg resp="#student" type="relig">devils</seg> dancing in <seg resp="#student" type="place">the air</seg>, I think.</l>
+                                <l>I saw a dolphin hang i’th’ horns of <seg resp="#student" type="place"><placeName>the moon</placeName></seg></l>
+                                <l>Shot from a wave—Hey day! Hey day<note resp="#dl" type="gloss">Hey day: exclamation</note>!</l>
+                                <l>How she kicks and jerks!</l> <note resp="#formerOwner student" type="context">How she kicks and yerks: It's important to remember that a performer in early modern plays could have expected to perform in a venue that was "a rectangular, flat, largely empty stage [with] nosets in the modern sense." <bibl>Syme, Holger Schott. <title>Theatre and Testimony in Shakespeare's England: a Culture of Mediation.</title> Cambridge University Press, 2014.</bibl> Thus, we can assume that there was not actually a physical ship on stage. Therefore, in order to portray some sort of sea voyage, the use of ropes, tackle boxes, and other sailing equipment could have aided the impression of being at sea, with characters pulling on cords found in the tiring house. The stage of the play was seen as the deck, the tiring house as the cabin of the ship, and the balcony as the mast or the lookout area. During this play, it's also clear that the characters on the boat are fighting against strong waves. However, it's impossible to create actual movement that comes with voyaging, so this illusion could have been made by the characters acting wild and hysterical. <bibl>McInnis, David. <title>Mind-Travelling and Voyage Drama in Early Modern England.</title> Palgrave Macmillan, 2013.</bibl></note>
+                                <l>Down with the main mast, lay her at hull<note resp="#dl" type="gloss">lay her at hull: float or drift with wind or current</note>,</l>
+                                <l>Furl up all her linens, and let her ride it out.</l> <stage resp="#student #dl" type="business" place="right" who="#sails">SAILORS about the stage.</stage>
+                            </lg>
+                        </sp>
+                        <sp who="#sailf1">
+                            <speaker>1 SAILOR</speaker>
+                            <lg>
+                                <l>She'll never brook<note resp="#student" type="gloss">brook: tolerate</note> it <seg resp="#student" type="name">master</seg>.</l>
+                                <l>She’s so deep laden that she’ll <seg resp="#dl" type="food">bulge</seg><note resp="#dl" type="gloss">bulge: spring a leak; also swell</note>.</l>
+                            </lg>
+                        </sp>
+                        <sp who="#mast">
+                            <speaker>MASTER</speaker>
+                            <lg>
+                                <l>Hang her.</l>
+                                <l>Can she not buffet<note resp="#student" type="gloss">buffet: beat back, contend with</note> with a storm a little?</l>
+                                <l>How it tosses her! She reels like a <seg resp="#student" type="food">drunkard</seg>.</l>
+                            </lg>
+                        </sp>
+                        <sp who="#sailf2">
+                            <speaker>2 SAILOR</speaker>
+                            <lg>
+                                <l>We have discovered <seg resp="#student" type="place">the land</seg>, <seg resp="#student" type="name">sir</seg>.</l>
+                                <l><seg resp="#student" type="relig">Pray</seg>, let’s make in. She’s so <seg resp="#student" type="food">drunk</seg>, else</l>
+                                <l>She may chance to <seg resp="#dl" type="food">cast up</seg><note resp="#dl" type="gloss">cast up: vomit</note> all her lading<note resp="#student" type="gloss">lading: cargo</note>.</l>
+                            </lg>
+                        </sp>
+                        <sp who="#sailf1">
+                            <speaker>1 SAILOR</speaker>
+                            <lg>
+                                <l><seg resp="#student" type="place">Land in</seg>, <seg resp="#student" type="place">land in</seg>. We are all lost else, lost and perished.</l>
+                            </lg>
+                        </sp>
+                        <sp who="#mast">
+                            <speaker>MASTER</speaker>
+                            <lg>
+                                <l>Steer her <seg resp="#student #dl" type="place">astarboard there</seg>. <stage resp="#student" type="business" place="right" who="#sailf1">SAILOR 1 steers.</stage></l>
+                            </lg>
+                        </sp>
+                        <sp who="#sailf2">
+                            <speaker>2 SAILOR</speaker>
+                            <lg>
+                                <l>Bear in with all the sail we can. See <seg resp="#student" type="name">master</seg>,</l>
+                                <l>See! What a clap of thunder there is:<stage resp="#student" type="business" place="right">Thunder.</stage></l>
+                                <l>What a face of <seg resp="#student" type="relig">heaven</seg>, how dreadfully it looks!<stage resp="#student" type="business" place="right" who="#sailf2">SAILOR 2 looks up.</stage></l>
+                            </lg>
+                        </sp>
+                        <sp who="#mast">
+                            <speaker>MASTER</speaker>
+                            <lg>
+                                <l>Thou <seg resp="#student" type="name">rascal</seg>, thou <seg resp="#student" type="name">fearful rogue</seg>, thou hast been <seg resp="#student" type="relig">praying</seg>:</l>
+                                <l>I see’t in thy face. Thou hast been mumbling</l>
+                                <l>When we are split, you <seg resp="#dl" type="name">slave</seg>. Is this a time</l>
+                                <l>To discourage our friends with your cold <seg resp="#student" type="relig">orisons</seg><note resp="#student" type="gloss">orisons: prayers</note>?</l>
+                                <l>Call up the <seg resp="#student" type="name">boatswain</seg><note resp="#student #dl" type="gloss">boatswain: a ship’s officer in charge of equipment</note>.  How it storms—holla<note resp="#dl" type="gloss">holla: an exclamation calling for attention or to cease</note>!</l>
+                            </lg>
+                        </sp>
+                        <stage resp="#comp" type="entrance" place="left" who="#boat">Enter BOATSWAIN.</stage>
+                        <sp who="#boat">
+                            <speaker>BOATSWAIN</speaker>
+                            <lg>
+                                <l>What shall we do, <seg resp="#student" type="name">master</seg>?</l>
+                                <l>Cast over all her lading? She will not swim</l>
+                                <l>An hour, else.</l>
+                            </lg>
+                        </sp>
+                        <stage resp="#comp" type="entrance" place="left" who="#alb #fran #lam #tib #mor">Enter ALBERT, FRANVILLE, LAMURE, TIBALT DU-PONT, and MORRILAT.</stage>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>The &#383;torm is lowd,</l>
+                                <l>We cannot heare one another,</l>
+                                <l>What's the coa&#383;t?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Boat&#383;w.</speaker>
+                            <lg>
+                                <l>We know not yet; &#383;hall we make in?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Albert.</speaker>
+                            <lg>
+                                <l>What comfort Saylers?</l>
+                                <l>I never &#383;aw, &#383;ince I have known the Sea,</l>
+                                <l>(Which has been this twenty yeers) &#383;o rude a tempe&#383;t.</l>
+                                <l>In what State are we?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;ter.</speaker>
+                            <lg>
+                                <l>Dangerous enough Captain,</l>
+                                <l>We have &#383;prung five leakes, and no little ones;</l>
+                                <l>Still rage; be&#383;ides her ribs are open;</l>
+                                <l>Her rudder almo&#383;t &#383;pent; prepare your &#383;elves;</l>
+                                <l>And have good courages, death comes but once,</l>
+                                <l>And let him come in all his frights.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Albert.</speaker>
+                            <lg>
+                                <l>Is't not po&#383;&#383;ible,</l>
+                                <cb n="2"/>
+                                <l>To make in toth' Land? 'tis here before us.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Morill.</speaker>
+                            <lg>
+                                <l>Here hard by Sir.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;ter.</speaker>
+                            <lg>
+                                <l>Death is neerer Gentlemen.</l>
+                                <l>Yet doe not cry, lets dye like men.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Talbat.</speaker>
+                            <lg>
+                                <l>Shal's hoy&#383;e the Boat out, <stage type="entrance" place="right">Enter Amint.</stage></l>
+                                <l>And goe all at one ca&#383;t? the more the merrier.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;ter.</speaker>
+                            <lg>
+                                <l>You are too ha&#383;ty Moun&#383;ieur,</l>
+                                <l>Do ye long to be ith Fi&#383;h-market before your time?</l>
+                                <l>Hold her up there.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>O mi&#383;erable Fortune,</l>
+                                <l>Nothing but horrour &#383;ounding in mine eares,</l>
+                                <l>No minute to promi&#383;e to my frighted &#383;oule.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tibat.</speaker>
+                            <lg>
+                                <l>Peace woman,</l>
+                                <l>We ha &#383;torms enough already; no more howling.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>Gentle Ma&#383;ter.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>Clap this woman under hatches.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Prethee &#383;peake mildly to her.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>Can no help?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>None that I know.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>No promi&#383;e from your goodne&#383;&#383;e?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>Am I a God? for heavens &#383;ake &#383;toaw this <lb rend="turnunder"/>woman.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tilb.</speaker>
+                            <lg>
+                                <l>Go! Take your <seg resp="#student" type="relig object">gilt prayer book</seg>,</l>
+                                <l>And to your business. Wink and die:</l>
+                                <l>There an old haddock stays for ye.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>Mu&#383;t I dye here in all the frights, the terrors,</l>
+                                <l>The thou&#383;and &#383;everall &#383;hapes, death triumphes in?</l>
+                                <l>No friend to councell me?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Have Peace &#383;weet Mi&#383;tre&#383;&#383;e.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>No kindreds teares upon me? Oh! <placeName>my country</placeName>!</l>
+                                <l>No gentle hand to clo&#383;e mine eyes?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Be comforted, heaven has the &#383;ame</l>
+                                <l>Power &#383;till, and the &#383;ame mercy.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>Oh! that wave will devour me!</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>Carry her down Captaine;</l>
+                                <l>Or by the&#383;e hands, I<unclear>'</unclear><!--clarity issue: the apostrophe here may not be present, though the space would indicate it is; similar to NWU and Harvard copies-->le give no more direction,</l>
+                                <l>Let the Ship &#383;inck or &#383;wimme; we ha nere better luck,</l>
+                                <l>When we ha &#383;uch &#383;toage as the&#383;e trinkets with us,</l>
+                                <l>The&#383;e &#383;weet &#383;in-breeders; how can heaven &#383;mile on us,</l>
+                                <l>When &#383;uch a burthen of iniquity</l>
+                                <l>Lies tumbling like a potion in our Ships belly? <stage type="exit" place="right">Exit.</stage></l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tib.</speaker>
+                            <lg>
+                                <l>A way<!--spacing ambiguity: possibly "Away"--> with her, and if &#383;he have a Prayer,</l>
+                                <l>That's fit for &#383;uch an houre, let her &#383;ay't quickly,</l>
+                                <l>And &#383;eriou&#383;ly. <stage type="exit" place="right">Exit.</stage></l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Come, I &#383;ee it cleer Lady, come in,</l>
+                                <l>And take &#383;ome comfort. I'le &#383;tay with ye.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>Where &#383;hould I &#383;tay? to what end &#383;hould I <lb rend="turnover"/>hope,</l>
+                                <l>Am I not circled round with mi&#383;ery?</l>
+                                <l>Confu&#383;ions in their full heights dwell about me:</l>
+                                <l>O <persName>Moun&#383;ier Albert</persName>, How am I bound to cur&#383;e ye,</l>
+                                <l>If cur&#383;es could redeeme me? how to hate ye?</l>
+                                <pb n="TSV-002" facs="https://digital.libraries.psu.edu/digital/collection/emblem/id/4816/rec/4"/>
+                                <cb n="1"/>
+                                <l>You forc't me from my quiet, from my friends;</l>
+                                <l>Even from their Armes, that were as deere to me,</l>
+                                <l>As day light is, or comfort to the wretched;</l>
+                                <l>You forc't my friends from their peacefull re&#383;t,</l>
+                                <l>Some your relentles &#383;word gave their la&#383;t groanes;</l>
+                                <l>Would I had there been numbred;</l>
+                                <l>And to fortunes never &#383;atisfied afflictions,</l>
+                                <l>Ye turn'd my Brother; and tho&#383;e few friends I'd left</l>
+                                <l>Like de&#383;perate creatures, to their own feares</l>
+                                <l>And the worlds &#383;tubborn pitties: Oh merciles.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Sweet Mi&#383;tre&#383;&#383;e.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>And whether they are wandred to avoyd ye,</l>
+                                <l>Or whether dead and no kind earth to cover 'em;</l>
+                                <l>Was this a lovers part? but heaven has found ye,</l>
+                                <l>And in his lowd voyce, his voyce of thunder,</l>
+                                <l>And in the mutiny of his deep wonders,</l>
+                                <l>He tels ye now, ye weepe too late:</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Let the&#383;e tears tell how I honour ye;</l>
+                                <l>Ye know deer Lady, &#383;ince ye were mine,</l>
+                                <l>How truly I have lov'd ye, how &#383;anctimoniou&#383;ly</l>
+                                <l>Ob&#383;erv'd your honour; not one la&#383;civious word,</l>
+                                <l>Not one touch Lady; no, not a hope that might not <lb rend="turnunder"/>render me</l>
+                                <l>The unpolluted &#383;ervant of your Cha&#383;tity;</l>
+                                <l>For you I put to Sea, to &#383;eek your Brother;</l>
+                                <l>Your Captain, yet your &#383;lave, that his redemption,</l>
+                                <l>If he be living, where the Sunne has circuit,</l>
+                                <l>May expiate your rigor, and my ra&#383;hne&#383;&#383;e.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Amint.</speaker>
+                            <lg>
+                                <l>The Storm grows greater; what &#383;hall we do?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Let's in;</l>
+                                <l>And aske heavens mercy; my &#383;trong mind yet pre&#383;ages,</l>
+                                <l>Through aI<!--"I" used for "l"-->l the&#383;e dangers, we &#383;hall &#383;ee a day yet</l>
+                                <l>Shall Crown your pious hopes, and my faire wi&#383;hes. <lb rend="turnover"/><stage type="exit" place="right">Exit.</stage></l>
+                            </lg>
+                        </sp>
+                        <stage type="entrance" place="center">Enter Ma&#383;ter, Saylors, Gentlemen, <lb/>Boat&#383;wayne and Surgeon.</stage>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>It mu&#383;t all over boord.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Boat&#383;w.</speaker>
+                            <lg>
+                                <l>l<!--"l" used for "I"-->t cleers to Sea-ward ma&#383;t.</l>
+                                <l>Fling o're the lading there, and let's lighten her;</l>
+                                <l>All the meat, and the Cakes, we are all gone el&#383;e;</l>
+                                <l>That we may finde her Leakes, and hold her up;</l>
+                                <l>Yet &#383;ave &#383;ome little Bisket for the Lady,</l>
+                                <l>Til we come to the Land.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>La-m.</speaker>
+                            <lg>
+                                <l>Mu&#383;t my goods over too?</l>
+                                <l>Why hone&#383;t Ma&#383;ter? here lies all my money;</l>
+                                <l>The money I ha wrackt by u&#383;urie,</l>
+                                <l>To buy new Lands and Lord&#383;hips in new Countryes,</l>
+                                <l>'Cau&#383;e I was bani&#383;ht from mine own</l>
+                                <l>I ha been this tweenty yeers a rai&#383;ing it.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tilb.</speaker>
+                            <lg>
+                                <l>Out with it:</l>
+                                <l>The devils are got together by the eares, who &#383;hall <lb rend="turnover"/>have it;</l>
+                                <l>And here they quarrell in the cI<!--"I" used for "l"-->ouds.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>La-m.</speaker>
+                            <lg>
+                                <l>I am undone Sir:</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tib.</speaker>
+                            <lg>
+                                <l>And be undone, 'tis better then we <lb rend="turnover"/>peri&#383;h.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>La-m.</speaker>
+                            <lg>
+                                <l>O &#383;ave one Che&#383;t of Plate.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tib.</speaker>
+                            <lg>
+                                <l>A way with it, lu&#383;tily Saylors;</l>
+                                <l>It was &#383;ome pawne, that he has got unju&#383;tly;</l>
+                                <l>Down with it low enough, and let Crabs breed in't;</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>Over with the Truncks too. <stage type="entrance" place="right">Enter <lb/>Albert.</stage></l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Take mine and &#383;pare not;</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>We mu&#383;t over with all.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Fran.</speaker>
+                            <lg>
+                                <l>Will ye throw away my Lord&#383;hip</l>
+                                <l>That I &#383;old, put it into clothes and nece&#383;&#383;aries,</l>
+                                <l>To goe to Sea with?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Tib.</speaker>
+                            <lg>
+                                <l>Over with it; I love to &#383;ee a Lord&#383;hip &#383;incke;</l>
+                                <l>Sir you left no Wood upon't to bovy it up;</l>
+                                <l>You might ha &#383;av'd it el&#383;e.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Fran.</speaker>
+                            <lg>
+                                <l>I am undone for ever;</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>Why we are all undone; would you be only <lb rend="turnover"/>happy?</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>La-m.</speaker>
+                            <lg>
+                                <l>Sir you may loo&#383;e too.</l>
+                            </lg>
+                        </sp>
+                        <cb n="2"/>
+                        <sp>
+                            <speaker>Tib.</speaker>
+                            <lg>
+                                <l>Thou lie&#383;t; I ha nothing but my skinne,</l>
+                                <l>And my Clothes; my &#383;word here, and my &#383;elf;</l>
+                                <l>Two Crowns in my Pocket; two paire of Cards;</l>
+                                <l>And three fal&#383;e Dice: I can &#383;wime like a Fi&#383;h;</l>
+                                <l>Ra&#383;call, nothing to hinder me.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Boat&#383;w.</speaker>
+                            <lg>
+                                <l>In with her of all hands.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>Come gentlemen, come Captain, ye mu&#383;t helpe <lb rend="turnover"/>all;</l>
+                                <l>My life now for the Land,</l>
+                                <l>'Tis high, and rocky, and full of perils;</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Alb.</speaker>
+                            <lg>
+                                <l>How ever let's attempt it.</l>
+                            </lg>
+                        </sp>
+                        <sp>
+                            <speaker>Ma&#383;t.</speaker>
+                            <lg>
+                                <l>Then cheer lu&#383;tily my hearts. <stage type="exit" place="right">Exit.</stage></l>
+                            </lg>
+                        </sp>
+                </div>                   
+            </div>
+            </div>
+        </body>
+    </text>
+</TEI>

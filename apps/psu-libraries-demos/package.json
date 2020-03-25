@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start:build": "es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
+    "build": "rimraf dist && rollup -c rollup.config.js && cp -r assets dist/assets",
+    "start": "es-dev-server --app-index index.html --node-resolve --open --watch --preserve-symlinks"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^0.21.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.15.4",
+    "es-dev-server": "^1.5.0"
+  },
+  "name": "psu-libraries-demos",
+  "version": "0.0.0",
+  "description": "Webcomponent psu-libraries-demos following open-wc recommendations",
+  "author": "psu-libraries-demos",
+  "license": "MIT",
+  "dependencies": {
+    "lit-html": "^1.0.0",
+    "lit-element": "^2.0.1",
+    "tei-render": "^0.0.1"
+  },
+  "private": true,
+  "workspaces": ["elements/*"]
+}

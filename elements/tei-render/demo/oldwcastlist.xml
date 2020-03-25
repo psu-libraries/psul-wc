@@ -1,0 +1,1613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Wife for a Moneth</title>
+            <author>John Fletcher</author>
+            <respStmt>
+               <resp>Annotator(s)</resp>
+               <name xml:id="formerOwner">Former Owner - Author of Handwritten Annotations</name>
+            </respStmt>
+            <respStmt>
+               <resp>Base text established by:</resp>
+               <persName>Taylor Hare</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Text validated by:</resp>
+               <persName>David LeBlanc</persName>
+               <persName>John Russell</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>The Pennsylvania State University</publisher>
+            <pubPlace>University Park, PA</pubPlace>
+         </publicationStmt>
+         <seriesStmt>
+            <title>The Digital Beaumont and Fletcher (1647)</title>
+            <editor>Claire M.L. Bourne</editor>
+         </seriesStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <author>Francis Beaumont</author>
+                  <author>John Fletcher</author>
+                  <title>Comedies and Tragedies Written by Francis Beavmont and Iohn Fletcher, Gentlemen. Never printed before, And now published by the Authours Originall Copies.</title>
+                  <imprint>
+                     <publisher>Humphrey Robinson</publisher>
+                     <pubPlace>the three Pidgeons</pubPlace>
+                     <publisher>Humphrey Moseley</publisher>
+                     <pubPlace>The Princes Armes in St. Pauls Church-yard</pubPlace> 
+                     <date>1647</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+        <front>
+            <head>This cast list has been adapted from the 1679 folio edition of Beaumont and
+                Fletcher's <title>Fifty Comedies and Tragedies</title>. Spelling has been
+                regularized based on how names appear in the text.</head>
+            <castList>
+                <castItem>
+                    <role xml:id="alb">Albert</role>
+                </castItem>
+                <castGroup xml:id="gents">
+                    <!--  Used in stage directions to refer to an undefined collection of characters
+                        that may include one or all of the members of the group "Gentlemen." -->
+                    <head>Gentlemen</head>
+                    <castItem>
+                        <role xml:id="tib">Tibalt du Pont</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="lam">Lamure</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="fran">Franville</role>
+                    </castItem>
+                    <castItem>
+                        <role xml:id="mor">Morillat</role>
+                    </castItem>
+                </castGroup>
+            </castList>
+         </front>
+      <body>
+         <div type="act" n="1">
+            <div type="scene" n="1">
+<fw type="pageNum">47</fw>
+<head>Actus primus, Scaena prima.</head> <!--c/t and a/e ligatures-->
+<cb n="1"/>
+<stage type="entrance" place="center">Enter King Frederick, Sorano, Valerio, Camillo, Cleanthes, Menallo, and Attendants.</stage>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l><hi rend="ornInit">W</hi>Ill your Grace &#383;peak?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>Let me alone <hi rend="italic"><persName>Sorano</persName></hi>,</l>
+<l>Although my thoughts &#383;eeme &#383;ad, they <lb rend="indent"/>are welcome to me.</l> 
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>You know I am private as your <lb rend="indent"/>&#383;ecret wi&#383;hes,</l>
+   <l>Ready to fling my &#383;oule upon your &#383;ervice,</l>
+<l>Ere your command be on't.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+   <l>Bid tho&#383;e 
+<app>
+<rdg wit="#psu">depatt.</rdg>
+<rdg wit="#tcp">depart.</rdg></app></l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>You mu&#383;t retire my Lords.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+   <l>What new de&#383;ign is hammering in his head now?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cle.</speaker>
+<lg>
+<l>Lets pray heartily</l>
+<l>None of our heads meet with it, my wife's old,</l>
+<l>That's all my comfort.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Men.</speaker>
+<lg>
+   <l>Mine's ugly, that I am &#383;ure on,</l>
+   <l>And I think hone&#383;t too, 'twould make me &#383;tart el&#383;e.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>Mine's troubled in the Country with a feaver,</l>
+   <l>And &#383;ome few infirmities el&#383;e; he looks againe,</l>
+   <l>Come le'ts retire, certaine 'tis &#383;ome &#383;he bu&#383;ine&#383;&#383;e,</l>
+<l>This new Lord is imployed.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+   <l>I'le not be far off, becau&#383;e I doubt the cau&#383;e.<stage type="exit" place="right">Ex.<lb/>Lords.</stage></l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>Are they all gone?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>All but your faithfull &#383;ervant.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>I would tell thee,</l>
+   <l>But 'tis a thing thou can&#383;t not like.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>Pray ye &#383;peak it, is it my head? 
+<app>
+<rdg wit="#psu">l</rdg>
+<rdg wit="#tcp">I</rdg> 
+</app>have it ready for</l>
+<l>ye, Sir:</l> 
+<l>Is't any action<!--c/t--> in my powre? my wit?</l>
+<l>I care not of what nature, nor what followes.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>I am in love.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>That's the lea&#383;t thing of a thou&#383;and,</l>
+   <l>The ea&#383;ie&#383;t to atchieve.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>But with whom <hi rend="italic"><persName>Sorano</persName>?</hi></l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>With whom you plea&#383;e, you mu&#383;t not be deny'd, Sir.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+   <l>Say it be with one of thy Kin&#383;women.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Say withall,</l>
+   <l>I &#383;hall more love your Grace, I &#383;hall more honour ye,</l>
+   <l>And would I had enough to &#383;erve your plea&#383;ure.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+   <l>Why 'tis thy Si&#383;ter then, the faire <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>Ile be plaine with thee.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Ile be as plaine with you Sir,</l>
+<l>She brought not her perfections<!--c/t--> to the world,</l>
+   <l>To lock them in a ca&#383;e, or hang 'em by her,</l>
+   <l>The u&#383;e is all &#383;he breeds 'em for, &#383;he is yours, Sir.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+   <l>Do&#383;t thou meane &#383;eriou&#383;ly?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>I meane my Si&#383;ter,</l>
+<l>And if I had a dozen more, they were all yours:</l>
+   <l>Some Aunts I have, they have been hand&#383;ome women,</l>
+<cb n="2"/>
+   <l>My mother's dead indeed, and &#383;ome few cozens</l>
+   <l>That are now &#383;hooting up, we &#383;hall &#383;ee &#383;hortly.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>No, 'tis <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>I have &#383;ent my man unto her,</l>
+   <l>Upon &#383;ome bu&#383;ine&#383;&#383;e to come pre&#383;ently</l>
+   <l>Hither, &#383;he &#383;hall come; Your Grace dare &#383;peak unto her?</l>
+   <l>Large golden promi&#383;es, and &#383;weet language, Sir,</l>
+   <l>You know what they worke, &#383;he is a compleat Courtier,</l>
+   <l>Be&#383;ides Ile &#383;et in.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>She 
+<app>
+<rdg wit="#psu">waights</rdg>
+<rdg wit="#tcp">weights</rdg> 
+</app> upon my Queene,</l>
+   <l>What jealou&#383;ie and anger may ari&#383;e,</l>
+   <l>Incen&#383;ing her?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sora.</speaker>
+<lg>
+<l>You have a good &#383;weet Lady,</l>
+<l>A woman of &#383;o even and &#383;till a temper,</l>
+<l>She knows not anger; &#383;ay &#383;he were a fury,</l>
+<l>I had thought you had been ab&#383;olute the great King,</l>
+<l>The fountaine of all honours, playes and plea&#383;ures,</l>
+<l>Your will and your commands unbounded al&#383;o;</l>
+<l>Go get a paire of beads and learne to pray, Sir.</l>
+</lg>
+</sp>
+<stage type="entrance" place="center">Enter Servant.</stage>
+<sp>
+<speaker>Ser.</speaker>
+<lg>
+<l>My Lord, your &#383;ervant &#383;taies.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Bid him come hither, and bring the Lady with <lb rend="turnunder"/>him.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>I will wooe her,</l>
+<l>And either lo&#383;e my &#383;elfe, or win her favour.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>She is comming in.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>Thy eyes &#383;hoot through the doore,</l>
+<l>They are &#383;o piercing, that the beames they dart</l>
+<l>Give new light to the roome.</l>
+</lg>
+</sp>
+<stage type="entrance" place="center">Enter Podramo and Evanthe.</stage>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Whether do&#383;t thou go?</l>
+<l>This is the Kings &#383;ide, and his private lodgings,</l>
+<l>What bu&#383;ine&#383;&#383;e have I here?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>My Lord &#383;ent for ye.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>His lodgings are below, you are mi&#383;taken,</l>
+<l>We left them at the &#383;taire-foot.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+   <l>Good &#383;weet Madam,</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>I am no Coun&#383;ellor, nor important Sutor.</l>
+<l>Nor have no private bu&#383;ine&#383;&#383;e through the&#383;e Chambers,</l>
+<l>To &#383;eek him this way, o' my life thou art drunke,</l>
+<l>Or wor&#383;e then drunke, hir'd to convey me hither</l>
+<l>To &#383;ome ba&#383;e end; now I looke on thee better,</l>
+<l>Thou ha&#383;t a bawdy face, and I abhor thee,</l>
+<l>A bea&#383;tly bawdy 
+<app>
+<rdg wit="#psu">fa<unclear reason="inkblot">ce, Ile</unclear></rdg>
+<rdg wit="#tcp">face, Ile</rdg>
+</app> go no further.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Nay &#383;hrink
+<app> 
+<rdg wit="#psu"><unclear reason="inkblot">not b</unclear>ack,</rdg> 
+<rdg wit="#tcp">not back,</rdg>
+</app> indeed you &#383;hall good Si&#383;ter,</l>
+<l>Why do you blu&#383;h? 
+<app>
+<rdg wit="#psu"><unclear reason="inkblot">th</unclear>e</rdg>
+<rdg wit="#tcp">the</rdg>
+</app> good King will not hurt ye,</l>
+<l>He honours ye, and loves ye.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Is this the bu&#383;ine&#383;&#383;e?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+   <l>Yes, and the be&#383;t you ever will arive at, if you <lb rend="indent"/>be wi&#383;e.</l> 
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>My Father was no bawd Sir,</l>
+<fw type="catch">Nor</fw>
+<pb n="AWFAM-002"/>
+<fw type="pageNum">48</fw>
+<cb n="1"/>
+<l>Nor of that wor&#383;hipfull &#383;tock as 
+<app>
+<rdg wit="#psu">l</rdg>
+<rdg wit="#tcp">I</rdg>
+</app> remember.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>You are a foole.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>You are that I &#383;hame to tell ye.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Gentle <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>The gracious Queen Sir</l>
+<l>Is well and merry, heaven be thanked for it,</l>
+<l>And as I think &#383;he waites you in the Garden.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Let her wait there, I talk not of her Garden,</l>
+<l>I talk of thee &#383;weet flower.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Your Grace is plea&#383;ant,</l>
+<l>To mi&#383;take a nettle for a ro&#383;e.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>No Ro&#383;e, nor Lilly, nor no glorious Hyacinth</l>
+<l>Are of that &#383;weetne&#383;&#383;e, whitene&#383;&#383;e, tenderne&#383;&#383;e,</l>
+<l>Softne&#383;&#383;e, and &#383;atisfying ble&#383;&#383;edne&#383;&#383;e</l>
+<l>As my <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Your Grace &#383;peakes very feelingly,</l>
+<l>I would not be a han&#383;ome wench in your way Sir,</l>
+<l>For a new gowne.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Thou art all hansomne&#383;&#383;e,</l>
+<l>Nature will be a&#383;ham'd to frame another</l>
+<l>Now thou art made, thou ha&#383;t rob'd her of her cunning,</l>
+<l>Each &#383;everall part about thee is a beauty.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Do you heare this Si&#383;ter?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Yes unworthy Brother, but all this will not do.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>But love <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>Thou &#383;halt have more then words, wealth, ea&#383;e, and honors</l>
+<l>My tender wench.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Be tender of my credit,</l>
+<l>And I &#383;hall love you Sir, and I &#383;hall honour ye.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>I love thee to injoy thee my <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>To give thee the content of love.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Hold, hold Sir, ye are to fleet,</l>
+<l>I have &#383;ome bu&#383;ine&#383;&#383;e this way, your Grace can nere con-<lb rend="turnunder"/>tent.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>You &#383;tubborne toy.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Good my Lord <hi rend="italic">Bawd</hi> I thank ye.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Thou &#383;halt not go, beleeve me &#383;weet <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>So high I will advance thee for this favour,</l>
+<l>So rich and potent I will rai&#383;e thy fortune,</l>
+<l>And thy friends mighty.</l><!-- The "h" in "mighty" appears to be a modified "n" -->
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Good your Grace be patient,</l>
+<l>I &#383;hall make the 
+<app>
+<rdg wit="#psu">wo<gap/>&#383;t</rdg>
+<rdg wit="#tcp">wo•st</rdg>
+</app> honourable wench that ever was,</l>
+<l>Shame your di&#383;cretion, and your choyce.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Thou &#383;halt not.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Shall I be rich do you &#383;ay, and glorious,</l>
+<l>And &#383;hine above the re&#383;t, and &#383;corne all beauties,</l>
+<l>And mighty in command?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Thou &#383;halt be any thing.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Let me 
+<app>
+<rdg wit="#psu">behone&#383;t</rdg><!--spacing accounted for as variant-->
+<rdg wit="#tcp">be honest</rdg>
+</app> too, and then ile thank ye.</l>
+<l>Have you not &#383;uch a title to be&#383;tow too?</l>
+<l>If I prove otherwi&#383;e, I would know but this Sir;</l>
+<l>Can all the power you have or all the riches,</l>
+<l>But tye mens tongues up from di&#383;cour&#383;ing of me,</l>
+<l>Their eyes from gazing at my glorious folly,</l>
+<l>Time that &#383;hall come from wondering at my impudence,</l>
+<l>And they that read my wanton life from cur&#383;es?</l>
+<l>Can you do this? have ye this magick in ye?</l>
+<l>This is not in your powre, though you be a Prince Sir,</l>
+<l>No more then evill is in holy Angels,</l>
+<l>Nor I, I hope; get wantonne&#383;&#383;e confirm'd</l>
+<l>By Act<!--c/t--> of Parliament an honesty,</l>
+<l>And &#383;o receiv'd by all, ile hearken to ye.</l>
+<l>Heaven guide your Grace.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l><hi rend="italic"><persName>Evanthe</persName></hi>, &#383;tay a little,</l>
+<l>Ile no more wantonne&#383;&#383;e, ile marry thee.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>What &#383;hall the Queene do?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Ile be divor&#383;ed from her.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Can you tell why? what has &#383;he done again&#383;t ye?</l>
+<l>Has &#383;he contrived a trea&#383;on gain&#383;t your Per&#383;on?</l>
+<cb n="2"/>
+<l>Abus'd your bed? does di&#383;obedience urge ye?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>That's all one, 'tis my will.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>'Tis a mo&#383;t wicked one,</l>
+<l>A mo&#383;t ab&#383;urd one, and will &#383;how a Mon&#383;ter;</l>
+<l>I had rather be a Whore, and with le&#383;&#383;e &#383;in,</l>
+<l>To your pre&#383;ent lu&#383;t, then Queen to your unju&#383;tice.</l>
+<l>Yours is no love, Faith and Religion fly it,</l>
+<l>Nor has no ta&#383;te of faire affection<!--c/t--> in it,</l>
+<l>Some helli&#383;h flame abu&#383;es your faire body,</l>
+<l>And helli&#383;h furies blow it; looke behinde ye,</l>
+<l>Divor&#383;e ye from a woman of her beauty,</l>
+<l>Of her integrity, her piety?</l>
+<l>Her love to you, to all that honours ye,</l>
+<l>Her cha&#383;t and vertuous love, are the&#383;e fit cau&#383;es?</l>
+<l>What will you do to me, when I have cloyd ye?</l>
+<l>You may finde time out in eternity,</l>
+<l>Deceit and violence in heavenly Ju&#383;tice,</l>
+<l>Life in the grave, and death among the ble&#383;&#383;ed,</l>
+<l>Ere &#383;taine or brack in her &#383;weet reputation.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>You have fool'd enough, be wi&#383;e now, and a wo-<lb rend="turnunder"/>man,</l>
+<l>You have &#383;hew'd a mode&#383;ty &#383;ufficient,</l>
+<l>If not too much for Court.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>You have &#383;hew'd an impudence,</l>
+<l>A more experienc'd bawd would blu&#383;h and &#383;hake at;</l>
+<l>You will make my kindred mighty.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg><l>Prethee heare me.</l></lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>I do Sir, and I count it a great offer.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>Any of thine.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>'Tis like enough you may clap honour on them,</l>
+<l>But 
+<app>
+<rdg wit="#psu">how '<unclear>t</unclear>will</rdg>
+<rdg wit="#tcp">how 'twill</rdg>
+</app> &#383;it, <!--possible f/i, yielding 'fit'-->and how men will adore it,</l>
+<l>Is &#383;till the que&#383;tion. Ile tell you what they'l &#383;ay Sir,</l>
+<l>What the report will be, and 'twill be true too,</l>
+<l>And it mu&#383;t needs be comfort to your Ma&#383;ter,</l>
+<l>The&#383;e are the i&#383;&#383;ues of her impudence:</l>
+<l>Ile tell your Grace, &#383;o deare I hold the Queene,</l>
+<l>So deare that honour that &#383;he nurs'd me up in,</l>
+<l>I would fir&#383;t take to me, for my lu&#383;t, a Moore,</l>
+<l>One of your Gally-&#383;laves, that cold and hunger,</l>
+<l>Decrepid mi&#383;ery, had made a mock-man,</l>
+<l>Then be your Queene.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>You are bravely re&#383;olute.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>I had rather be a Leopar, and be &#383;hun'd,</l>
+<l>And dye by peeces, rot into my grave,</l>
+<l>Leaving no memory behind to know me,</l>
+<l>Then be a high Whore to eternity.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>You have a<hi rend="turned">n</hi>other Gam&#383;ter I perceive by ye,</l>
+<l>You dur&#383;t not &#383;light me el&#383;e.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Ile finde him out,</l>
+<l>Though he lye next thy heart hid, Ile di&#383;cover him,</l>
+<l>And ye proud peat, Ile make you cur&#383;e your in&#383;olence.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>
+<app>
+<rdg wit="#psu">Tougue</rdg>
+<rdg wit="#tcp">Tongue</rdg>
+</app> of an Angell, and the truth of Heaven,</l>
+<l>How am I ble&#383;t?<stage type="exit" place="right">Exit Val.</stage></l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l><hi rend="italic"><persName>Podramo</persName></hi> go in ha&#383;t</l>
+<l>To my Si&#383;ters Gentlewoman, you know her well,</l>
+<l>And bid her &#383;end her Mistris pre&#383;ently</l>
+<l>The le&#383;&#383;er Cabinet &#383;he keeps her Letters in,</l>
+<l>And &#383;uch like toyes, and bring it to me In&#383;tantly. Away.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>I am gone.<stage type="exit" place="right">Exit.</stage></l>
+</lg>
+</sp>
+<stage type="entrance" place="center">Enter the Queene with two Ladies.</stage>
+<sp>
+<speaker>Sora.</speaker>
+<lg>
+<l>The Queene.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>Lets quit the place, &#383;he may grow jealous.<stage type="exit" place="right">Exit <lb/>Fred. Soran.</stage></l>
+</lg>
+</sp>
+
+<sp>
+<speaker>Mar.</speaker>
+<lg>
+<l>So &#383;uddenly departed, what's the rea&#383;on?</l>
+<l>Doe's my approach di&#383;plea&#383;e his Grace? are my eyes</l>
+<l>So hatefull to him? or my conver&#383;ation</l>
+<l>Infected,<!--c/t--> that he flies me? faire <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>Are you there? then I &#383;ee his &#383;hame.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>'Tis true Madam,</l>
+<fw type="catch">'Tha<unclear>t</unclear></fw>
+<pb n="AWFAM-003"/>
+<fw type="pageNum">49</fw><!--examples of poor and partial inking throughout page-->
+<cb n="1"/>
+<l>'Thas pleas'd his Goodne&#383;&#383;e to be plea&#383;ant with me,</l>
+</lg>
+</sp>
+<sp>
+<speaker>Mar.</speaker>
+<lg>
+<l>'Tis &#383;trange to finde thy mode&#383;ty in this place,</l>
+<l>Doe's the King offer faire? doe's thy face take him?</l>
+<l>Nere blu&#383;h <hi rend="italic"><persName>Evanthe</persName></hi>, 'tis a very &#383;weet one,</l>
+<l>Doe's he raine gold, and precious promi&#383;es</l>
+<l>Into thy lap? will he advance thy fortunes?</l>
+<l>Shalt thou be mighty wench?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>Never mock Madam;</l>
+<l>'Tis rather on your part to be lamented,</l>
+<l>At lea&#383;t reveng'd, I can be mighty Lady,</l>
+<l>And glorious too, glorious and great, as you are.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Mar.</speaker>
+<lg>
+<l>He will marry thee.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>Who would not be a Queene, Madam?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Mar.</speaker>
+<lg>
+<l>'Tis true <hi rend="italic"><persName>Evanthe</persName></hi>, 'tis a brave ambition,</l>
+<l>A golden dreame, that may delude a good minde,</l>
+<l>What &#383;hall become of me?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>You mu&#383;t learne to pray,</l>
+<l>Your age and honour will become a Nunnery.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Mar.</speaker>
+<lg>
+<l>Wilt thou remember me?<stage type="business" place="right">Weeps.</stage></l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>She weeps. Sweet Lady</l>
+<l>Upon my knees I aske your &#383;acred pardon,</l>
+<l>For my rude boldne&#383;&#383;e; and know, my &#383;weet Mi&#383;tris,</l>
+<l>If e're there were ambition in <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>It was and is to do you faithfull duties;</l>
+<l>'Tis true I have been tempted by the King,</l>
+<l>And with no few and potent charmes, to wrong ye,</l>
+<l>To violate the cha&#383;te joyes of your bed;</l>
+<l>And tho&#383;e not taking hold, to u&#383;urpe your &#383;tate,</l>
+<l>But &#383;he that has been bred up under ye,</l>
+<l>And daily fed upon your vertuous precepts,</l>
+<l>Still growing &#383;trong by example of your goodne&#383;&#383;e,</l>
+<l>Having no errant motion from obedience,</l>
+<l>Flyes from the&#383;e vanities, as meere 
+<app>
+<rdg wit="#psu">iIlu&#383;ions;</rdg>
+<rdg wit="#tcp">illusions;</rdg></app></l>
+<l>And arm'd with hone&#383;ty, defies all promi&#383;es.</l>
+<l>In token of this truth, I lay my life downe</l>
+<l>Under your &#383;acred foot, to do you &#383;ervice.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Mar.</speaker>
+<lg>
+<l>Ri&#383;e my true friend, thou vertuous, bud of beauty,</l>
+<l>Thou Virgins<!--small ink blot--> honour, &#383;weetly blow and flouri&#383;h,</l>
+<l>And that rude nipping winde, that &#383;eeks to bla&#383;t thee,</l>
+<l>Or taint thy root, be cur&#383;t to all po&#383;terity;</l>
+<l>To my
+<app>
+<rdg wit="#psu">pro<gap/>ection</rdg>
+<rdg wit="#tcp">pro•ection</rdg> <!--c/t-->
+</app> from this houre I take ye,</l>
+<l>Yes, and the King &#383;hall know<pc type="dash">—</pc></l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>Give his heat way, Madam,</l>
+<l>And 'twill go out againe, he may forget all.<stage type="exit" place="right">Exeunt.</stage></l>
+</lg>
+</sp>
+<stage type="entrance" place="center">Enter Camillo, Cleanthes, and Menallo.</stage>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>What have we to do with the times?we cannot cure <lb rend="turnunder"/>'em
+<app>
+<rdg wit="#psu"><unclear>;</unclear></rdg>
+<rdg wit="#tcp">;</rdg></app></l>
+<l>Let 'em go on, when they are &#383;wolne with &#383;urfets</l>
+   <l>They'le bur&#383;t and &#383;tink, then all the world &#383;hall &#383;mell 'em</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cle.</speaker>
+<lg>
+<l>A man may live a bawd, and be an hone&#383;t man.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Men.</speaker>
+<lg>
+<l>Yes, and a wi&#383;e man too, 'tis a vertuous calling.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>To his owne wife e&#383;pecially, or to his &#383;i&#383;ter,</l>
+<l>The neerer to his owne blood, &#383;till the hone&#383;ter;</l>
+<l>There want &#383;uch hone&#383;t men, would we had mor<!--partially inked r-->e of 'em.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Men.</speaker>
+<lg>
+<l>To be a villaine is no &#383;uch rude matter.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>No, if he be a neat one, and a perfect,<!--c/t--></l>
+<l>Art makes all excellent, what is it Gentl.</l>
+<l>
+<app>
+<rdg wit="#psu">ln</rdg>
+<rdg wit="#tcp">In</rdg>
+</app> a good cau&#383;e to kill a dozen coxcombs?</l>
+<l>That blunt rude fellowes call good Patriots?</l>
+<l>Nothing, nor ne're look'd after.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Men.</speaker>
+<lg>
+<l>'Tis ene as much, as ea&#383;ie too, as hone&#383;t, &amp; as cleer,</l>
+<l>To ravi&#383;h Matrons, and deflowre coy wenches,</l>
+<l>But here they are &#383;o willing, 'tis a complement.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cle.</speaker>
+<lg>
+<l>To pull downe Churches with pretention,</l>
+<l>To build 'em fairer, may be done with honour,</l>
+<l>And all this time beleeve no God.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>I think &#383;o, 'tis faith enough if they name him in <lb rend="turnover"/>their angers,</l>
+<l>Or on their rotten Tombs ingrave an Angell;</l>
+<l>Well, brave <hi rend="italic"><persName>Alphon&#383;o</persName></hi>, how happy had we been,</l>
+<cb n="2"/>
+<l>If thou had'&#383;t rain'd?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Men.</speaker>
+<lg>
+<l>Would I had his di&#383;ea&#383;e,</l>
+<l>Tyed like a Lepro&#383;ie to my po&#383;terity,</l>
+<l>So he were right againe.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Clean.</speaker>
+<lg>
+<l>What is his Melady?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>Nothing but &#383;ad and &#383;ilent melancholly,</l>
+<l>Laden with griefes and thoughts, no man knows why nei-<lb rend="turnunder"/>ther;</l>
+<l>The good <hi rend="italic"><persName>Brandino</persName></hi> Father to the Prince&#383;&#383;e,</l>
+<l>U&#383;ed all the art and indu&#383;try that might be,</l>
+<l>To free <hi rend="italic"><persName>Alphon&#383;o</persName></hi> from this dull calamity,</l>
+<l>And &#383;eat him in his rule, he was his elde&#383;t</l>
+<l>And noble&#383;t too, had not faire nature &#383;topt in him,</l>
+<l>For which cau&#383;e this was cho&#383;en to inherit,</l>
+<l><hi rend="italic"><persName>Frederick</persName></hi> the yonger.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Clean.</speaker>
+<lg>
+<l>Doe's he u&#383;e his brother</l>
+<l>With that re&#383;pect<!--c/t--> and honour that befits him?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Cam.</speaker>
+<lg>
+<l>He is kept privately, as they pretend,</l>
+<l>To give more ea&#383;e and comfort to his &#383;ickne&#383;&#383;e;</l>
+<l>But he has hone&#383;t &#383;ervants, the grave <hi rend="italic"><persName>Rugio</persName></hi>,</l>
+<l>And Fryer <hi rend="italic"><persName>Marco</persName></hi>, that waight upon his Per&#383;on,</l>
+<l>And in a Mona&#383;tery he lives.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Men.</speaker>
+<lg>
+<l>'Tis full of &#383;adne&#383;&#383;e,</l>
+<l>To &#383;ee him when he comes to his fathers Tombe,</l>
+<l>As once a day that is his Pilgrimage,</l>
+<l>Whil&#383;t in devotion the Quire &#383;ings an Antheme:</l>
+<l>How piou&#383;ly he kneeles, and like a Virgin</l>
+<l>That &#383;ome cro&#383;&#383;e fate had cozen'd of her Love,</l>
+<l>Weeps till the &#383;tubborne Marble &#383;weats with pitty,</l>
+<l>And to his grones the whole Quire beares a <hi rend="italic">Chorus</hi>.</l>
+</lg>
+</sp>
+<stage type="entrance" place="center">Enter Frederick, Sorano with the Cabinet.</stage>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>So do I too. The King with his contrivers,</l>
+<l>This is no place for us.<stage type="exit" place="right">Exeunt Lords.</stage></l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>This is a Jewell,</l>
+<l>Lay it a&#383;ide, what Paper's that?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>A Letter,</l>
+<l>But 'tis a womans, Sir, I know by the hand,</l>
+<l>And the fal&#383;e authography, they write old Saxon.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+   <l>May be her gho&#383;tly mothers, that in&#383;tructs<!--c/t--> her.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>No, 'tis a cozens, and came up with a great Cake.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>What's that?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sora.</speaker>
+<lg>
+<l>A paire of Gloves the Duche&#383;&#383;e gave her,</l>
+<l>For &#383;o the out&#383;ide &#383;aies.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>That other Paper?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>A charme for the tooth-ach, here's nothing but <lb rend="turnover"/>Saints and Cro&#383;&#383;es.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker><!--spacing after speech prefix-->
+<lg>
+<l>Look in that box, me thinks that &#383;hould hold &#383;ecrets,</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>'Tis paint and curles of 
+<app>
+<rdg wit="#psu">haire<unclear>,</unclear> &#383;he</rdg>
+<rdg wit="#tcp">haire, she</rdg>
+</app> begins to exerci&#383;e.</l>
+<l>A gla&#383;&#383;e of water too, I would faine ta&#383;te it,</l>
+<l>But I am wickedly afraid 'twill &#383;ilence me,</l>
+<l>Never a Conduit Pipe to convey this water.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>The&#383;e are all Rings, deaths heads, and &#383;uch 
+<app>
+<rdg wit="#psu">me-<lb rend ="turnover"/>mentoes</rdg>
+<rdg wit="#tcp">me¦mentoe•</rdg></app></l><!--s not present at all in EEBO-->
+<l>Her Grandmother, and worme-eaten Aunts left to her,</l>
+   <l>To tell her what her beauty mu&#383;t arive at.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>That, that.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>They are written Songs Sir, to provoke young La-<lb rend ="turnover"/>dies;</l>
+<l>Lords, here's a prayer booke, how the&#383;e agree?</l>
+<l>Here's a &#383;trange Union.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>Ever by a 
+<app>
+<rdg wit="#psu">&#383;ufeit</rdg>
+<rdg wit="#tcp">safest</rdg>
+</app> you have a julip &#383;et to coole the<lb rend="turnover"/>Patient.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred</speaker>
+<lg>
+<l>Tho&#383;e, tho&#383;e.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>They are Ver&#383;es to the ble&#383;t <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Tho&#383;e may di&#383;cover,</l>
+<l>
+<app>
+<rdg wit="#psu">Re<unclear>a</unclear>de</rdg>
+<rdg wit="#tcp">Reade</rdg> 
+</app> them out 
+<app>
+<rdg wit="#psu"><hi rend="italic"><persName>Soran<unclear>o</unclear></persName></hi></rdg>
+<rdg wit="#tcp">Sorant.</rdg></app></l>
+</lg>
+</sp>
+<sp>
+   <!-- The letter is centered and in italic. -->
+<lg type="letter">
+<salute><l>To the ble&#383;t <hi rend="italic"><persName>Evanthe</persName></hi>,</l></salute>
+<l><hi rend="dropInt">L</hi>Et tho&#383;e complaine, that feeles Loves cruelty,</l>
+   <!--the body of the letter following the dropped initial 'L' is rendered in italic-->
+<l>And in &#383;ad Legents write their woes,</l>
+<l>With Ro&#383;es gently 'has corrected<!--c/t--> me;</l>
+<l>My war is without rage or blowes;</l>
+<!--indent--><l>My Mi&#383;tris eyes &#383;hine faire on my de&#383;ires,</l>
+<!--indent--><l>And hope &#383;prings up inflam'd with her new fires.</l>
+<fw type="catch"><hi rend="italic">No</hi></fw>
+<fw type="sig">Gggggg</fw>
+<pb n="AWFAM-004"/>
+<note resp="#formerOwner" place="left">Euanthe &amp; Cassandra <lb/>be ready</note>
+<fw type="pageNum">50</fw>
+<cb n="1"/>
+<l>No more an Exile will I dwell,</l>
+<l>With folded armes, and &#383;ighs all day,</l>
+<l>Reckoning the torments of my hell,</l>
+<l>And flinging my &#383;weet joyes away;</l>
+<!--indent--><l>I am call'd home againe to quiet peace,</l>
+<!--indent--><l>My Mi&#383;tris &#383;miles, and all my &#383;orrowes cea&#383;e.</l>
+<l>Yet what is living in her eyes?</l>
+<l>Or being ble&#383;t with her &#383;weet tongue,</l>
+<l>If the&#383;e no other joyes imply?</l>
+<l>A golden Give, a plea&#383;ing wrong:</l>
+<!--indent--><l>To be your owne but one poore Moneth, I'd give</l>
+<!--indent--><l>My youth, my fortune, and then leave to live.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>This is my rivall, that I knew the hand now.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Sor.</speaker>
+<lg>
+<l>I know it, I have &#383;eene it, 'tis <hi rend="italic"><persName>Valerio's</persName></hi>,</l>
+<l>That hopefull Gentlemans that was brought up with ye,</l>
+<l>And by your charge nouri&#383;ht and fed</l>
+<l>At the &#383;ame Table, with the &#383;ame allowance.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>And all this curte&#383;ie to ruine me?</l>
+<l>Cro&#383;&#383;e my de&#383;ires? had better have fed humblier,</l>
+<l>And &#383;tood at greater di&#383;tance from my fury:</l>
+<l>Go for him quickly, finde him in&#383;tantly,</l>
+<l>Whil&#383;t my impatient heart &#383;wells high with choller;</l>
+<l>Better have lov'd de&#383;paire, and &#383;afer ki&#383;t her.<stage type="exit" place="right">Exit Lords.</stage></l>
+</lg>
+</sp>
+<note resp="#formerOwner" place="left">[entrance symbol]</note><stage type="entrance" place="center">Enter Evanthe and Ca&#383;&#383;andra.</stage>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Thou old weak foole, do&#383;t thou know to what end,</l>
+<l>To what betraying end he got this Casket?</l>
+<l>Dur&#383;t thou deliver him without my Ring?</l>
+<l>Or a command from mine own mouth? that Cabinet</l>
+<l>That holds my heart, you uncon&#383;iderate a&#383;&#383;e,</l>
+<l>Thou 
+<app>
+<rdg wit="#psu">brainIe&#383;&#383;e</rdg>
+<rdg wit="#tcp">brainlesse</rdg>
+</app> Ideot.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Ca&#383;.</speaker>
+<lg>
+<l>I &#383;aw you go with him,</l>
+<l>At their fir&#383;t word commit your per&#383;on to him,</l>
+<l>And made no &#383;cruple; he is your brothers Gentleman,</l>
+<l>And for any thing I know, an hone&#383;t man;</l>
+<l>And might not I upon the &#383;ame &#383;ecurity deliver him a <lb rend="turnunder"/>box?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>A Bottle-head.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>You &#383;hall have cau&#383;e to chafe, as I will handle it.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>I had rather thou had&#383;t delivered me to Pirats,</l>
+<l>Betraid me to uncurable di&#383;ea&#383;es,</l>
+<l>Hung up my Picture<!--c/t--> in a Market place,</l>
+<l>And &#383;old me to wilde bawds.</l>
+</lg>
+<note resp="#formerOwner" place="right">vale: &amp; podra <lb/><hi rend="underline">be ready</hi></note>
+</sp>
+<sp>
+<speaker>Ca&#383;&#383;an.</speaker>
+<lg>
+<l>As I take it Madam,</l>
+<l>Your Maidenhead lyes not in that Cabinet,</l>
+<l>You have a Clo&#383;er, and you keep the key too,</l>
+<l>Why are you vext thus?</l>
+</lg>
+</sp>
+<sp>
+<speaker>
+<app>
+<rdg wit="#psu">Fva.</rdg>
+<rdg wit="#tcp">Eva.</rdg></app></speaker>
+<lg>
+<l>I could cur&#383;e thee wickedly,</l>
+<l>And wi&#383;h thee more deformed then age can make thee,</l>
+<l>Perpetuall hunger, and no teeth to &#383;atisfie it,</l>
+<l>Waight on thee &#383;till, nor &#383;leep be found to ea&#383;e it:</l>
+<l>Tho&#383;e hands that gave the Casket, may the 
+<app>
+<rdg wit="#psu">Pal&#383;ie</rdg><!--see 'Isicles' below, which also includes s/i ligature-->
+<rdg wit="#tcp">Palfie</rdg></app>
+</l>
+<l>For ever make unu&#383;e&#383;ull, even to feed thee;</l>
+<l>Long winters, that thy bones may turne to I&#383;icles</l>
+<l>No Hell can thaw againe, inhabit by thee.</l>
+<l>Is thy care like thy body, all on crookedne&#383;&#383;e?</l>
+<l>How &#383;curvily thou crie&#383;t now? like a drunkard,</l>
+<l>Ile have as pure teares from a durty &#383;pout:</l>
+<l>Do, &#383;weare thou did&#383;t this ignorantly, &#383;weare it,</l>
+<l>Sweare and be damn'd, thou halfe witch.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Ca&#383;&#383;an.</speaker>
+<lg>
+<l>The&#383;e are fine words, well Madam, Madam.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>'Tis not well thou mummy,</l>
+<l>'Tis impudently, ba&#383;ely done, thou durty<pc type="dash">—</pc></l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+   <l>Has your young &#383;anctity<!--c/t--> done railing, Madam,</l>
+<l>Again&#383;t your innocent Squire? do you &#383;ee this Sonnet?</l>
+<l>This
+<app>
+<rdg wit="#psu">Ioving</rdg>
+<rdg wit="#tcp">loving</rdg>
+</app> Script?do you know from whence it came too?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>I do, and dare avouch it pure and hone&#383;t.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>You have private Vi&#383;itants, my noble Lady,</l>
+<l>That in &#383;weet numbers court your goodly vertues,</l>
+<l>And to the height of adoration.</l>
+</lg>
+</sp>
+<cb n="2"/>
+<sp>
+<speaker>Evan,</speaker><!--note comma after speech prefix-->
+<lg>
+<l>Well Sir,</l>
+<l>There's neither Here&#383;ie nor Trea&#383;on in it.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>A Prince may beg at the
+<app>
+<rdg wit="#psu">doore,</rdg>
+<rdg wit="#tcp">doore;</rdg> 
+</app> whil&#383;t the&#383;e fea&#383;t <lb rend="turnunder"/>with ye;</l>
+<l>A favour or a grace, from &#383;uch as I am.</l>
+<note resp="#formerOwner" place="left">[entrance symbol]</note><stage type="entrance" place="center">Enter Valerio, and Podrano.</stage><note resp="#formerOwner" place="left">[entrance symbol]</note>
+<l>Cour&#383;e, common things. You are welcome; pray come <lb rend="turnunder"/>neer, Sir,</l>
+<l>Do you know this paper?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>I am betray'd; I do Sir,</l>
+<l>'Tis mine, my hand and heart, if I die for her,</l>
+<l>I am thy Martyr, Love, and time &#383;hall honour me.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Ca&#383;&#383;.</speaker>
+<lg>
+<l>You &#383;awcy Sir, that came in my Ladies name,</l>
+<l>For her guilt Cabinet, you cheating Sir too,</l>
+<l>You &#383;curvy U&#383;her, with as &#383;curvy leggs,</l>
+<l>And a wor&#383;e face, thou poore ba&#383;e hanging holder,</l>
+<l>How dur&#383;t thou come to me with a lye in thy mouth?</l>
+<l>An impudent lye?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>Hollow, good <hi rend="italic"><persName>Jill</persName></hi>, you hobble.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Ca&#383;&#383;.</speaker>
+<lg>
+<l>A &#383;tinking lye, more &#383;tinking then the teller,</l>
+<l>To play the pilfring knave, there have been ra&#383;cals</l>
+<l>Brought up to fetch and carry like your Wor&#383;hip,</l>
+<l>That have been hang'd for le&#383;&#383;e, whipt there are daily</l>
+<l>And if the Law will do me right<pc type="dash">—</pc></l>
+</lg>
+</sp>
+<sp>
+<speaker>Pod.</speaker>
+<lg>
+<l>What then old Maggot?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Ca&#383;&#383;.</speaker>
+<lg>
+<l>Thy mother was carted younger; Ile have thy hide,</l>
+<l>Thy mangy hide, embroder'd with a dog-whip,</l>
+<l>As it is now with potent Pox, and thicker.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>Peace, good antiquity, Ile have your bones el&#383;e</l>
+<l>Ground into Gunpowder to &#383;hoot at Cats with;</l>
+<l>One word more, and Ile blanch thee like an Almond,</l>
+<l>There's no &#383;uch cure for the 
+<app>
+<rdg wit="#psu">&#383;he-falling-&#383;ickue&#383;&#383;e,</rdg>
+<rdg wit="#tcp">she-falling-sicknesse,</rdg></app></l>
+<l>As the powder of a dried bawds skin, be &#383;ilent,</l>
+<l>You are very prodigall of your &#383;ervice here, Sir,</l>
+<l>Of your life more it 
+<app>
+<rdg wit="#psu">&#383;eemes.</rdg>
+<rdg wit="#tcp">seems.</rdg></app></l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>I repent neither,</l>
+<l>Becau&#383;e Your Grace &#383;hall under&#383;tand it comes</l>
+<l>From the be&#383;t part of love, my pure affection,<!--c/t--></l>
+<l>And kindled with cha&#383;te flame, I will not fly from it,</l>
+<l>If it be error to de&#383;ire to marry,</l>
+<l>And marry her that &#383;anctity<!--c/t--> would dote on,</l>
+<l>I have done ami&#383;&#383;e; if it be a Trea&#383;on</l>
+<l>To graft my &#383;oule to vertue, and to grow there,</l>
+<l>To love the tree 
+<app>
+<rdg wit="#psu">thar</rdg>
+<rdg wit="#tcp">that</rdg> 
+</app> beares &#383;uch happine&#383;&#383;e;</l>
+<l>Conceive me, Sir, this fruit was ne're forbidden;</l>
+<l>Nay, to de&#383;ire to ta&#383;te too, I am Traytor;</l>
+<l>Had you but plants enough of this ble&#383;t Tree, Sir,</l>
+<l>Set round about your Court to beautifie it,</l>
+<l>Deaths twice 
+<app>
+<rdg wit="#psu">&#383;omany,</rdg><!--spacing accounted for as variant-->
+<rdg wit="#tcp">so many,</rdg>
+</app> to di&#383;may the aproachers,</l>
+<l>The ground would &#383;carce yeeld graves to noble
+<app>
+<rdg wit="#psu">Lovers.</rdg>
+<rdg wit="#tcp">Lovers,</rdg></app></l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>'Tis well maintain'd, you wi&#383;h and pray to fortune,</l>
+<l>Here in your Sonnet, and &#383;he has heard your prayers,</l>
+<l>So much you dote upon your owne undoing,</l>
+<l>But one Month to injoy her as your wife,</l>
+<l>Though at the expiring of that time you die for't.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>I could wi&#383;h many, many ages Sir,</l>
+<l>To grow as old as time in her imbraces,</l>
+<l>If heaven would grant it, and you &#383;mile upon it;</l>
+<l>But if my choice were two houres, and then peri&#383;h,</l>
+<l>I would not pull my heart back.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fred.</speaker>
+<lg>
+<l>You have your wi&#383;h,</l>
+<l>
+<app>
+<rdg wit="#psu">To morrow</rdg>
+<rdg wit="#tcp">To'morrow</rdg>
+</app> I will &#383;ee you nobly married,</l>
+<l>Your Month take out in all content and plea&#383;ure;</l>
+<l>The fir&#383;t day of the following Month you dye for't;</l>
+<l>
+<app>
+<rdg wit="#psu">Kneele not,</rdg>
+<rdg wit="#tcp">Kneele, not,</rdg>
+</app> not all your prayers can divert me;</l>
+<l>Now marke your &#383;entence, mark it &#383;cornfull Lady,</l>
+<l>If when <hi rend="italic"><persName>Valerio's</persName></hi> dead, within twelve houres,</l>
+<l>For thar's your late&#383;t time, you finde not out</l>
+<l>Another husband on the &#383;ame condition</l>
+<l>To marry you againe, you dye your &#383;elf too.</l>
+</lg>
+</sp>
+<fw type="catch"><hi rend="italic">Evan.</hi></fw>
+<pb n="AWFAM-005"/>
+<fw type="pageNum">51</fw>
+<cb n="1"/>
+<sp>
+<speaker>Evan.</speaker>
+<lg>
+<l>Now you are mercifull, I thank your Grace.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Fre.</speaker>
+<lg>
+<l>If when you are married, you but &#383;eek to &#383;cape</l>
+<l>Out of the Kingdome, you, or &#383;he, or both,</l>
+<l>Or to infect<!--c/t--> mens minds with hot commotions,</l>
+<l>You dye both in&#383;tantly; will you love me now Lady?</l>
+<l>My tale will now be heard, but now I &#383;corne ye.<stage type="exit" place="right">Exe.</stage></l>
+</lg>
+</sp>
+<stage type="modifier" place="center"><hi rend="roman">Manent,</hi> Valerio, <hi rend="roman">and</hi> Evanthe.</stage>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Is our faire love, our hone&#383;t, our intire,</l>
+<l>Come to this hazard?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>'Tis a noble one, and 
+<app>
+<rdg wit="#psu">l</rdg>
+<rdg wit="#tcp">I</rdg>
+</app> am much in love with ma-<lb rend="turnover"/>lice for it,</l>
+<l>Envy could not have &#383;tudied me a way,</l>
+<l>Nor fortune pointed out a path to honour,</l>
+<l>Straighter and nobler, if &#383;he had her eyes:</l>
+<l>When I have once injoyed my &#383;weet <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<l>And ble&#383;t my youth with her mo&#383;t deere 
+<app>
+<rdg wit="#psu">imbraces,</rdg>
+<rdg wit="#tcp">Imbraces,</rdg></app></l>
+<l>I have done my journey here, my day is out,</l>
+<l>All that the world has el&#383;e is foolery,</l>
+<l>Labour, and lo&#383;&#383;e of time, what &#383;hould I live for?</l>
+<l>Think but mans life a moneth, and we are happy.</l>
+<l>I would not have my joyes grow old for any thing;</l>
+<l>A paradi&#383;e, as thou art my <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+<note resp="#formerOwner" place="right">Tony with <lb/>a urinall</note>
+<l>Is only made to wonder at a little,</l>
+<l>Enough for humane eyes, and then to wander from.</l>
+<l>Come do not weep, &#383;weet, you di&#383;honour me,</l>
+<l>Your teares and griefes but que&#383;tion my ability,</l>
+<l>Whether I dare dye: Do you love intirely?</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>You know I do.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>Then grudge not my felicity.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Eva.</speaker>
+<lg>
+<l>Ile to the Queene.</l>
+</lg>
+</sp>
+<sp>
+<speaker>Val.</speaker>
+<lg>
+<l>Do any thing that's hone&#383;t,</l>
+<l>But if you &#383;ue to him in death, I hate you.</l>
+</lg>
+</sp>
+</div>
+         </div>
+      </body>
+  </text>
+</TEI>

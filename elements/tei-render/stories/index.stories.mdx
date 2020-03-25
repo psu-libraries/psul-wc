@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../tei-render.js';
+
+<Meta 
+  title="TeiRender"
+  parameters={{
+    component: "tei-render",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# TeiRender
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add tei-render
+```
+
+```js
+import 'tei-render/tei-render.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <tei-render></tei-render>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="tei-render" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <tei-render .title=${'Hello World'}></tei-render>
+  `}
+</Story>
