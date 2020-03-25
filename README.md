@@ -1,7 +1,7 @@
 PSU Libraries Demos Application
 
 ```bash
-cd apps/psu-libaries-demos
+cd apps/psu-libraries-demos
 yarn install
 yarn start
 ```
