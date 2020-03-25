@@ -1,4 +1,4 @@
-import { html, css, LitElement } from 'lit-element';
+import { html, css, LitElement } from 'lit-element/lit-element.js';
 import { CETEI } from './lib/ceteicean.js';
 
 export class TeiRender extends LitElement {

@@ -1,11 +1,12 @@
 {
-  "name": "tei-render",
-  "version": "0.0.1",
+  "name": "@psul/tei-render",
+  "version": "0.0.3",
   "description": "Webcomponent tei-render following open-wc recommendations",
   "author": "tei-render",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
+  "private": false,
   "scripts": {
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
