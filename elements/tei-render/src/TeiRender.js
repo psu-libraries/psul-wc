@@ -1,5 +1,10 @@
-import { LitElement } from 'lit-element/lit-element.js';
+import { LitElement, html } from "lit-element/lit-element.js";
 import { CETEI } from './lib/ceteicean.js';
+import "@polymer/iron-icons/iron-icons.js";
+import "@polymer/paper-icon-button/paper-icon-button.js";
+import "@polymer/paper-toast/paper-toast.js";
+import "@lrnwebcomponents/anchor-behaviors/anchor-behaviors.js";
+
 const validModes = () => {
   return {
     drama: "Drama",
@@ -19,6 +24,12 @@ export class TeiRender extends LitElement {
     this.mode = 'drama';
     // this is some btopro sauce
     this.basePath = this.pathFromUrl(decodeURIComponent(import.meta.url));
+    // elements for toast
+    this.closeIcon = "close";
+    this.closeLabel = "Close";
+    this.copyMessage = "Copied to Clipboard";
+    this.linkIcon = "link";
+    this.linkLabel = "Get link";
   }
   /**
    * LitElement / popular convention
@@ -36,6 +47,45 @@ export class TeiRender extends LitElement {
        */
       mode: {
         type: String,
+      },
+      /**
+       * overrides state manager's default icon for copy link's toast's close button
+       */
+      "closeIcon": {
+        "type": String
+      },
+      /**
+       * overrides state manager's default label for copy link's toast's close button
+       */
+      "closeLabel": {
+        "type": String
+      },
+      /**
+       * overrides state manager's default message for copy link's toast
+       */
+      "copyMessage": {
+        "type": String
+      },
+      /**
+       * current line being copied
+       */
+      "currentLineId": {
+        "type": String
+      },
+      /**
+       * icon for copy link's button
+       */
+      "linkIcon": {
+        "type": String
+      },
+      /**
+       * label for copy link's button
+       */
+      "linkLabel": {
+        "type": String
+      },
+      "toast": {
+        type: Object
       }
     };
   }
@@ -97,6 +147,27 @@ export class TeiRender extends LitElement {
         }
         // append the data, which will happen just after the styles
         this.appendChild(data);
+        let lines = this.querySelectorAll('tei-l');
+        if(lines) [...lines].forEach((line,i)=>{
+          let lineId = `line-${i}`, 
+            button = document.createElement('paper-icon-button');
+          line.setAttribute('id',lineId);
+          button.setAttribute('aria-controls',"relative-heading-toast");
+          button.setAttribute('icon',this.linkIcon);
+          button.setAttribute('label',this.linkLabel);
+          button.addEventListener('click', e=>this._handleCopyClick(lineId));
+          line.appendChild(button);
+        });
+        let tbutton = document.createElement('paper-icon-button');
+          tbutton.setAttribute('icon',this.closeIcon);
+          tbutton.setAttribute('label',this.closeLabel);
+          tbutton.addEventListener('click', this.closeCopyLink);
+        this.toast = document.createElement('paper-toast');
+        this.toast.id ="relative-heading-toast";
+        this.toast.duration = 5000;
+        this.toast.appendChild(tbutton);
+        this.appendChild(this.toast);
+        console.log('toasty!',this.toast);
       });
     } catch (error) {
       console.log("Error in getting the document.")
@@ -144,6 +215,45 @@ export class TeiRender extends LitElement {
   pathFromUrl(url) {
     return url.substring(0, url.lastIndexOf("/") + 1);
   }
+/**
+   * gets whether heading is currently anchored
+   * @readonly
+   * @returns {boolean}
+   */
+  get anchored() {
+    return window.AnchorBehaviors && window.AnchorBehaviors.getTarget
+      ? window.AnchorBehaviors.getTarget(this)
+      : false;
+  }
+  _handleCopyClick(lineId) {
+    this.copyLink(lineId);
+  }
+ /**
+   * handles copying the share link
+   * @param {object} active heading
+   */
+  copyLink(lineId) {
+    let el = document.createElement("textarea");
+    this.currentLineId = `${window.location.href.replace(window.location.hash, "")}#${lineId}`;
+    console.log('copylink',this.currentLineId);
+    el.value = this.currentLineId;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    console.log('yeah toast!',this.toast);
+    if (
+      this.toast &&
+      this.toast.open
+    )
+      this.toast.text = `${this.copyMessage}: ${this
+        .currentLineId}`;
+      this.toast.open();
+  }
+
+
+
+
   /**
    * HAXproperties
    */
