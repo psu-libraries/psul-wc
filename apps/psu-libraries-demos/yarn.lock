@@ -1809,6 +1809,11 @@
   resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-2.4.3.tgz#384f4f6d54563ba465fb4df21fe89e78a76fc530"
   integrity sha512-cV4+sAmshf8ysU2USutrSRYQkJzEYKHsRCGa0CkMElGpG5747VHtkfsW3NdVIBV/m2MDKXTDydT4lkrysH7IFA==
 
+CETEIcean@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/CETEIcean/-/CETEIcean-1.1.1.tgz#675777ad6276318c8304fcc29fa9b6f5175941f2"
+  integrity sha512-X5b6mZNrh8Fh5hvKePlEM6YBDt8HONXaWerzkXxQJn+bbawOnpVyYOKG3EnHhsPAVEYLw3gKaWsPtvg8K2aMyA==
+
 abortcontroller-polyfill@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.4.0.tgz#0d5eb58e522a461774af8086414f68e1dda7a6c4"
@@ -8715,6 +8720,15 @@ table@^5.2.3:
     lodash "^4.17.14"
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
+
+tei-render@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/tei-render/-/tei-render-0.0.1.tgz#7a7b6838e3106d427f96be50da97ec02a7dc0057"
+  integrity sha512-K+6p9eGCM9NrsSo6K/5dEnMrf+z5rJse2ag4NZ7cQcV/QRvj+PUT2oFV0nO1wGHTxdo/ia0MDiyLCsD4p1c+2Q==
+  dependencies:
+    CETEIcean "^1.1.1"
+    lit-element "^2.2.1"
+    lit-html "^1.1.2"
 
 telejson@^3.2.0:
   version "3.3.0"

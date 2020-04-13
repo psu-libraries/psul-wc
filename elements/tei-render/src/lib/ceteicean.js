@@ -614,29 +614,32 @@ export const CETEI = (function () {
         for (const name of names) {
           try {
             const fn = this.getHandler(name);
-            window.customElements.define(this._tagName(name), class extends HTMLElement {
-              constructor() {
-                super(); 
-                if (!this.matches(":defined")) { // "Upgraded" undefined elements can have attributes & children; new elements can't
-                  if (fn) {
-                    fn.call(this);
+            if (!window.customElements.get(this._tagName(name))) {
+              window.customElements.define(this._tagName(name), class extends HTMLElement {
+                constructor() {
+                  super(); 
+                  if (!this.matches(":defined")) { // "Upgraded" undefined elements can have attributes & children; new elements can't
+                    if (fn) {
+                      fn.call(this);
+                    }
+                    // We don't want to double-process elements, so add a flag
+                    this.setAttribute("data-processed","");
                   }
-                  // We don't want to double-process elements, so add a flag
-                  this.setAttribute("data-processed","");
                 }
-              }
 
-              // Process new elements when they are connected to the browser DOM
-              connectedCallback() {
-                if (!this.hasAttribute("data-processed")) {
-                  if (fn) {
-                    fn.call(this);
+                // Process new elements when they are connected to the browser DOM
+                connectedCallback() {
+                  if (!this.hasAttribute("data-processed")) {
+                    if (fn) {
+                      fn.call(this);
+                    }
+                    this.setAttribute("data-processed","");
                   }
-                  this.setAttribute("data-processed","");
-                }
-              };
-            });
+                };
+              });
+            }
           } catch (error) {
+            console.log(`Check that  xmlns="http://www.tei-c.org/ns/1.0" is set`);
             console.log(`${this._tagName(name)  } couldn't be registered or is already registered.`);
             console.log(error);
           }
