@@ -8,7 +8,6 @@ export class PsuLibrariesDemos extends LitElement {
       page: { type: String }
     };
   }
-
   static get styles() {
     return css`
       :host {
@@ -21,7 +20,8 @@ export class PsuLibrariesDemos extends LitElement {
   render() {
     return html`
       <h1>tei-render demo:</h1>
-      <tei-render src="assets/TSV_Base_Text_Sample_Revised.xml"></tei-render>
+      <tei-render src="assets/TSV_Base_Text_Sample_Revised.xml" mode="play"></tei-render>
+      <tei-render src="assets/TSV_Base_Text_Sample_Revised.xml" mode="drama"></tei-render>
     `;
   }
 }
