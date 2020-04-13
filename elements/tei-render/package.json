@@ -1,14 +1,15 @@
 {
   "name": "@psul/tei-render",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Webcomponent tei-render following open-wc recommendations",
   "author": "tei-render",
   "license": "MIT",
+  "repository": "git@github.com:psu-libraries/psul-wc.git",
   "main": "index.js",
   "module": "index.js",
   "private": false,
   "scripts": {
-    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch --preserve-symlinks",
     "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
     "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",

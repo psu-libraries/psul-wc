@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="http://teic.github.io/CETEIcean/css/CETEIcean.css" media="screen" charset="utf-8">
+  <!-- link rel="stylesheet" href="http://teic.github.io/CETEIcean/css/CETEIcean.css" media="screen" charset="utf-8" -->
   <style>
     body {
       background: #fafafa;
@@ -11,21 +11,12 @@
   </style>
 </head>
 <body>
-  <div id="demo"></div>
+  <h2>This is an element demo</h2>
+  <tei-render src="TSV_Base_Text_Sample_Revised.xml" mode="play"></tei-render>
+  <tei-render src="TSV.Edited_OpenPub_Sample.xml" mode="drama"></tei-render>
 
   <script type="module">
-    import { html, render } from 'lit-html';
     import '../tei-render.js';
-
-    const src = 'testTEI.xml';
-    render(
-      html`
-        <tei-render src="TSV_Base_Text_Sample_Revised.xml">
-          some more light-dom
-        </tei-render>
-      `,
-      document.querySelector('#demo')
-    );
   </script>
 </body>
 </html>
