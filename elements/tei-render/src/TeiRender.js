@@ -2,8 +2,9 @@ import { LitElement, html } from "lit-element/lit-element.js";
 import { CETEI } from './lib/ceteicean.js';
 import "@polymer/iron-icons/iron-icons.js";
 import "@polymer/paper-icon-button/paper-icon-button.js";
-import "@polymer/paper-toast/paper-toast.js";
+// import "@polymer/paper-toast/paper-toast.js";
 import "@lrnwebcomponents/anchor-behaviors/anchor-behaviors.js";
+import "@lrnwebcomponents/simple-toast/simple-toast.js";
 
 const validModes = () => {
   return {
