@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@lrnwebcomponents/anchor-behaviors": "^2.5.0",
+    "@lrnwebcomponents/simple-toast": "^2.6.7",
     "@polymer/paper-icon-button": "^3.0.2",
     "@polymer/iron-icons": "^3.0.1",
     "@polymer/paper-toast": "^3.0.1",

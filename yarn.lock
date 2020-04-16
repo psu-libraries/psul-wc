@@ -1128,6 +1128,15 @@
   dependencies:
     "@polymer/polymer" "^3.3.1"
 
+"@lrnwebcomponents/simple-toast@^2.6.7":
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-toast/-/simple-toast-2.6.7.tgz#9c6cd19d02839f235668c9aa686b5f73d928f4eb"
+  integrity sha512-fx2agECCa5ww9s+AtAfmOF7XJ8mpZOKszc6oTXODG327rIKSXqKT5+C9ghkcj6s1O3UN/Z1LLKWk9frRYL1gyw==
+  dependencies:
+    "@polymer/paper-button" "^3.0.1"
+    "@polymer/paper-toast" "^3.0.1"
+    lit-element "2.2.1"
+
 "@mdjs/core@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@mdjs/core/-/core-0.1.6.tgz#1fd839154731ca9fdce7bbdd084381c0ade916c2"
@@ -1511,6 +1520,16 @@
     "@polymer/iron-behaviors" "^3.0.0-pre.26"
     "@polymer/iron-checked-element-behavior" "^3.0.0-pre.26"
     "@polymer/paper-ripple" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/paper-button@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-button/-/paper-button-3.0.1.tgz#f13b019137e3f6ccc4d04d0b1f27f4830ea5774d"
+  integrity sha512-JRNBc+Oj9EWnmyLr7FcCr8T1KAnEHPh6mosln9BUdkM+qYaYsudSICh3cjTIbnj6AuF5OJidoLkM1dlyj0j6Zg==
+  dependencies:
+    "@polymer/iron-flex-layout" "^3.0.0-pre.26"
+    "@polymer/paper-behaviors" "^3.0.0-pre.27"
+    "@polymer/paper-styles" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
 "@polymer/paper-icon-button@^3.0.2":
@@ -6033,6 +6052,13 @@ listr@^0.14.2:
     listr-verbose-renderer "^0.5.0"
     p-map "^2.0.0"
     rxjs "^6.3.3"
+
+lit-element@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.2.1.tgz#79c94d8cfdc2d73b245656e37991bd1e4811d96f"
+  integrity sha512-ipDcgQ1EpW6Va2Z6dWm79jYdimVepO5GL0eYkZrFvdr0OD/1N260Q9DH+K5HXHFrRoC7dOg+ZpED2XE0TgGdXw==
+  dependencies:
+    lit-html "^1.0.0"
 
 lit-element@^2.2.1, lit-element@^2.3.1:
   version "2.3.1"
