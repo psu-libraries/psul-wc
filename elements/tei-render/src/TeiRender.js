@@ -22,7 +22,7 @@ export class TeiRender extends LitElement {
     this.src = null;
     this.validModes = Object.keys(validModes());
     this.mode = 'drama';
-    // this is some btopro sauce
+    // this is some btopro sauce to get the correct base path
     this.basePath = this.pathFromUrl(decodeURIComponent(import.meta.url));
     // elements for toast
     this.closeIcon = "close";
@@ -30,6 +30,8 @@ export class TeiRender extends LitElement {
     this.copyMessage = "Copied to Clipboard";
     this.linkIcon = "link";
     this.linkLabel = "Get link";
+    this.pageIcon = "description";
+    this.pageLabel = "See the original page";
   }
   /**
    * LitElement / popular convention
@@ -46,6 +48,24 @@ export class TeiRender extends LitElement {
        * presentation mode / topic matter
        */
       mode: {
+        type: String,
+      },
+      /**
+       * how frequently to show line numbers
+       */
+      lineDisplay: {
+        type: String,
+      },
+      /**
+       * what prefix to use for ids for line numbers
+       */
+      linePrefix: {
+        type: String,
+      },
+      /**
+       * what number to start line numbers
+       */
+      lineStart: {
         type: String,
       },
       /**
@@ -83,6 +103,18 @@ export class TeiRender extends LitElement {
        */
       "linkLabel": {
         "type": String
+      },
+      /**
+       * icon for page link's button
+       */
+      pageIcon: {
+        type: String
+      },
+      /**
+       * label for page link's button
+       */
+      pageLabel: {
+        type: String
       },
       "toast": {
         type: Object
@@ -126,12 +158,28 @@ export class TeiRender extends LitElement {
           //   b.innerHTML = elt.innerHTML;
           //   return b;
           // },
-          
           // Adds a new handler for <term>, wrapping it in an HTML <b>
-          "speaker": function (elt) {
-            const b = document.createElement("b");
-            b.innerHTML = elt.innerHTML;
-            return b;
+          // "speaker": function (elt) {
+          //   const b = document.createElement("b");
+          //   b.innerHTML = elt.innerHTML;
+          //   return b;
+          // },
+          // Adds a new handler for <lb>, wrapping it in html where text was orphaned before
+          "lb": function (elt) {
+            elt.innerHTML = elt.parentNode.lastChild.textContent;
+            elt.parentNode.lastChild.textContent = '';
+          },
+          // Adds a new handler for <lb>, wrapping it in html where text was orphaned before
+          "pb": function (elt) {
+            // elt.innerHTML = elt.parentNode.lastChild.textContent;
+            // elt.parentNode.lastChild.textContent = '';
+            let pbutton = document.createElement('paper-icon-button');
+            pbutton.setAttribute('icon',"description");
+            pbutton.setAttribute('label',this.pageLabel);
+            let pblinked = document.createElement('a');
+            pblinked.setAttribute('href',elt.getAttribute("facs"));
+            pblinked.appendChild(pbutton);
+            return pblinked;
           },
           // Inserts the first array element before tei:add, and the second, after.
           "add": ["`", "´"]
@@ -148,15 +196,26 @@ export class TeiRender extends LitElement {
         // append the data, which will happen just after the styles
         this.appendChild(data);
         let lines = this.querySelectorAll('tei-l');
+        let i=this.lineStart;
+        let lineIdPrefix=this.linePrefix || "line"
+        lineIdPrefix=lineIdPrefix
         if(lines) [...lines].forEach((line,i)=>{
-          let lineId = `line-${i}`, 
+          // set the line ID
+          let currentLineNumber=i+1
+          let lineId = `${lineIdPrefix}-${currentLineNumber}`, 
             button = document.createElement('paper-icon-button');
           line.setAttribute('id',lineId);
+          // set the line margin identifier for nth Line
+          if( currentLineNumber % this.lineDisplay === 0 || currentLineNumber === 1 ){
+            line.setAttribute('data-lineno',currentLineNumber)
+          }
+          // create the buttons
           button.setAttribute('aria-controls',"relative-heading-toast");
           button.setAttribute('icon',this.linkIcon);
           button.setAttribute('label',this.linkLabel);
           button.addEventListener('click', e=>this._handleCopyClick(lineId));
           line.appendChild(button);
+          // line.prepend(button);
         });
         let tbutton = document.createElement('paper-icon-button');
           tbutton.setAttribute('icon',this.closeIcon);
@@ -167,7 +226,7 @@ export class TeiRender extends LitElement {
         this.toast.duration = 5000;
         this.toast.appendChild(tbutton);
         this.appendChild(this.toast);
-        console.log('toasty!',this.toast);
+        // console.log('toasty!',this.toast);
       });
     } catch (error) {
       console.log("Error in getting the document.")

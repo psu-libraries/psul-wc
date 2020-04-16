@@ -7,13 +7,15 @@
     body {
       background: #fafafa;
     }
-    
   </style>
 </head>
 <body>
   <h2>This is an element demo</h2>
-  <tei-render src="TSV_Base_Text_Sample_Revised.xml" mode="play"></tei-render>
-  <tei-render src="TSV.Edited_OpenPub_Sample.xml" mode="drama"></tei-render>
+  <tei-render src="TSV_Base_Text_Sample_Revised.xml" mode="drama" linedisplay=10 lineStart=1></tei-render>
+  <br />
+  <hr />
+  <br />
+  <tei-render src="TSV.Edited_OpenPub_Sample.xml" mode="drama" linedisplay=10 lineStart=1 linePrefix="edited-line"></tei-render>
 
   <script type="module">
     import '../tei-render.js';

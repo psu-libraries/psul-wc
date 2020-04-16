@@ -2,6 +2,10 @@
 :host {
   display: block;
 }
+tei-tei {
+  max-width: 35em;
+  width: 75%;
+}
 tei-choice tei-abbr + tei-expan:before,
 tei-choice tei-expan + tei-abbr:before,
 tei-choice tei-sic + tei-corr:before,
@@ -118,9 +122,6 @@ tei-anchor {
 }
 tei-app {
   /* Empty Rule Set */
-}
-tei-app tei-note {
-  display: none;
 }
 tei-appInfo {
   display: block;
@@ -285,12 +286,13 @@ tei-category {
   /* Empty Rule Set */
 }
 tei-cb {
-  display: block;
+  display: none;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 tei-cb:before {
-  content: "[column break]";
+  /* content: "[column break]"; */
+  /* Empty Rule Set */
 }
 tei-cell {
   display: table-cell;
@@ -497,6 +499,23 @@ tei-figure {
   margin-left: auto;
   margin-right: auto;
 }
+tei-fw[type='pageNum'] {
+  display: block;
+  float:right;
+  right: 2em;
+}
+tei-fw[type='pageNum']:before {
+  content:'Page [';
+}
+tei-fw[type='pageNum']:after {
+  content:"]";
+}
+tei-fw[type='sig'] {
+  /* Empty Rule Set */
+}
+tei-fw[type='catch'] {
+  /* Empty Rule Set */
+}
 /* g */
 tei-g {
   /* Empty Rule Set */
@@ -650,6 +669,17 @@ tei-hi[rend="caps"] {
 tei-hi[rend="italic"] {
   font-style: italic;
 }
+tei-hi[rend="ornInit"] {
+  /* GLS: do we want to bold this or change the background color? */
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  /* padding-top: 4px;
+  padding-right: 8px;*/
+  padding-left: 0.25em; 
+}
 tei-hi {
   /* GLS: do we want to bold this or change the background color? */
 }
@@ -736,12 +766,25 @@ tei-kinesic {
 /* l */
 tei-l {
   display: block;
-  width: 35em;
+  padding-left: 2em;
 }
 tei-l[data-lineno]:before {
   content: attr(data-lineno);
   position: absolute;
   left: 2em;
+}
+
+tei-l paper-icon-button {
+  visibility: collapse;
+}
+tei-l:hover paper-icon-button {
+  /* Empty Rule Set */
+  visibility: visible;
+} 
+
+tei-lg > tei-l:first-of-type {
+  display: inline;
+  margin-left: 0.75em;
 }
 tei-lacunaEnd {
   /* Empty Rule Set */
@@ -770,13 +813,32 @@ tei-layout {
 tei-layoutDesc {
   /* Empty Rule Set */
 }
-tei-lb {
+tei-lb[rend="turnover"] {
   /* Empty Rule Set */
+  color: gray;
+  /* content: '\a'; */
+  font-style: oblique;
+  vertical-align: top;
+  text-align: right;
 }
-tei-lb:after {
-  content: '\a';
+tei-lb[rend="turnunder"] {
+  /* Empty Rule Set */
+  color: gray;
+  /* content: '\a'; */
+  font-style: oblique;
+  vertical-align: bottom;
+  text-align: right;
+}
+
+tei-lb[rend="indent"]:before {
+  /* Empty Rule Set */
+  content: '<br />\a             ';
   white-space: pre;
 }
+/* tei-lb:after {
+  content: '\a';
+  white-space: pre;
+} */
 tei-lbl {
   /* Empty Rule Set */
 }
@@ -786,9 +848,9 @@ tei-leaf {
 tei-app[data-tei-type=inline] tei-lem {
 }
 tei-lg {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  display: inline;
+  /* margin-top: 1em;
+  margin-bottom: 1em; */
 }
 tei-link {
   /* Empty Rule Set */
@@ -1022,7 +1084,6 @@ tei-normalization {
   /* Empty Rule Set */
 }
 tei-note {
-  /*
   display: block;
   margin: 1.5em auto 1.5em auto;
   padding: .5em 1.5em 1.5em 1.5em;
@@ -1040,11 +1101,11 @@ tei-note {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  */
+ 
 }
 tei-notesStmt {
   /* do we want to box each individual <note> if they're in a <notesStmt>? */
-  display: none;
+  /* display: none; */
 }
 tei-num {
   /* Empty Rule Set */
@@ -1125,14 +1186,18 @@ tei-pause {
   /* Empty Rule Set*/
 }
 tei-pb {
-  /*
   display: block;
   width: 100%;
   text-align: right;
   color: gray;
   margin: 2em 0 2em 0;
   font-size: 11pt;
-  */
+}
+tei-pb {
+  --paper-icon-button: {
+    height: 50px;
+    width: 50px;
+}
 }
 /*
 tei-pb:before {
@@ -1534,8 +1599,11 @@ tei-spanGrp {
   /* NOT SURE, look back on */
 }
 tei-speaker {
-  font-weight: bold;
+  font-weight: 900;
+  text-decoration: underline;
   margin-right: 0;
+  display: inline;
+  float: left;
 }
 tei-specDesc {
   /* NOT SURE, look back on */
@@ -1564,6 +1632,7 @@ tei-stage {
   margin-top: 1em;
   margin-bottom: 1em;
   font-style: italic;
+  text-align: right;
 }
 tei-stamp {
   display: block;
