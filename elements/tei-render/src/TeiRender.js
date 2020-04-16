@@ -30,6 +30,9 @@ export class TeiRender extends LitElement {
     this.copyMessage = "Copied to Clipboard";
     this.linkIcon = "link";
     this.linkLabel = "Get link";
+    this.lineDisplay = 5;
+    this.linePrefix = "line";
+    this.lineStart = 1;
     this.pageIcon = "description";
     this.pageLabel = "See the original page";
   }
