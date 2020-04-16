@@ -2,6 +2,7 @@
 :host {
   display: block;
 }
+tei-render {}
 tei-tei {
   max-width: 35em;
   width: 75%;
@@ -1884,14 +1885,13 @@ html > body {
   padding: 0;
 }
 html {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   margin-left: 2em;
-  margin-right: 4em;
+  /* margin-right: 4em; */
   padding: 2.5em;
   font-family: "Lucida Grande", "Cardo", "Arial Unicode MS","Galilee Unicode Gk", "New Athena Unicode", "Athena Unicode", "Palatino Linotype", "Titus Cyberbit Basic", "Vusillus Old Face", "Alphabetum", "Galatia SIL", "Code 2000", "GentiumAlt", "Gentium", "Minion Pro", "GeorgiaGreek", "Vusillus Old Face Italic", "Everson Mono", "Aristarcoj", "Porson", "Legendum", "Aisa Unicode", "Hindsight Unicode", "Caslon", "Verdana", "Tahoma";
   font-size: 12pt;
-  background-color: white;
-  color: #292929;
+  /* background-color: pink; */
+  /* color: #292929; */
 }
-    

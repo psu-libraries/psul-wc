@@ -1,6 +1,6 @@
 {
   "name": "@psul/tei-render",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Webcomponent tei-render following open-wc recommendations",
   "author": "tei-render",
   "license": "MIT",
