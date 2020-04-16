@@ -35,6 +35,7 @@ export class TeiRender extends LitElement {
     this.lineStart = 1;
     this.pageIcon = "description";
     this.pageLabel = "See the original page";
+    window.SimpleToast.requestAvailability();
   }
   /**
    * LitElement / popular convention
@@ -220,16 +221,17 @@ export class TeiRender extends LitElement {
           line.appendChild(button);
           // line.prepend(button);
         });
-        let tbutton = document.createElement('paper-icon-button');
-          tbutton.setAttribute('icon',this.closeIcon);
-          tbutton.setAttribute('label',this.closeLabel);
-          tbutton.addEventListener('click', this.closeCopyLink);
-        this.toast = document.createElement('paper-toast');
-        this.toast.id ="relative-heading-toast";
-        this.toast.duration = 5000;
-        this.toast.appendChild(tbutton);
-        this.appendChild(this.toast);
+        // let tbutton = document.createElement('paper-icon-button');
+        //   tbutton.setAttribute('icon',this.closeIcon);
+        //   tbutton.setAttribute('label',this.closeLabel);
+        //   tbutton.addEventListener('click', this.closeCopyLink);
+        // this.toast = document.createElement('paper-toast');
+        // this.toast.id ="relative-heading-toast";
+        // this.toast.duration = 5000;
+        // this.toast.appendChild(tbutton);
+        // this.appendChild(this.toast);
         // console.log('toasty!',this.toast);
+
       });
     } catch (error) {
       console.log("Error in getting the document.")
@@ -303,14 +305,27 @@ export class TeiRender extends LitElement {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    console.log('yeah toast!',this.toast);
-    if (
-      this.toast &&
-      this.toast.open
-    )
-      this.toast.text = `${this.copyMessage}: ${this
-        .currentLineId}`;
-      this.toast.open();
+    
+    const evt = new CustomEvent("simple-toast-show", {
+      bubbles: true,
+      composed: true,
+      cancelable: true,
+      detail: {
+        text: `Copied link ${this.currentLineId} to your clipboard`,
+        duration: 3000
+      }
+    });
+    // window.dispatchEvent(evt); // to handle toast from window
+    this.dispatchEvent(evt); // to handle toast from tei-render
+
+    // console.log('yeah toast!',this.toast);
+    // if (
+    //   this.toast &&
+    //   this.toast.open
+    // )
+    //   this.toast.text = `${this.copyMessage}: ${this
+    //     .currentLineId}`;
+    //   this.toast.open();
   }
 
 
