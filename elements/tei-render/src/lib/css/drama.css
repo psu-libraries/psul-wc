@@ -776,7 +776,7 @@ tei-l {
 tei-l[data-lineno]:before {
   content: attr(data-lineno);
   position: absolute;
-  left: 2em;
+  right: 2em;
 }
 
 tei-l paper-icon-button {
