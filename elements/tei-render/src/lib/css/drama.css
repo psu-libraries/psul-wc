@@ -776,7 +776,7 @@ tei-l {
 tei-l[data-lineno]:before {
   content: attr(data-lineno);
   position: absolute;
-  right: 2em;
+  right: 6em;
 }
 
 tei-l paper-icon-button {
@@ -837,7 +837,7 @@ tei-lb[rend="turnunder"] {
 
 tei-lb[rend="indent"]:before {
   /* Empty Rule Set */
-  content: '<br />\a             ';
+  content: '\a             ';
   white-space: pre;
 }
 /* tei-lb:after {
@@ -1098,8 +1098,9 @@ tei-note {
   position: relative;
   border: 1px solid #aaaaaa;
   background: #fafafa;
+  text-align: left;
   /* reset text-indent for note with <l> ancestors. */
-  /*
+  
   text-indent: 0;
   font-size: 85%;
   text-align: justify;
@@ -1637,8 +1638,19 @@ tei-stage {
   margin-top: 1em;
   margin-bottom: 1em;
   font-style: italic;
+}
+tei-stage[place=center] {
+  text-align: center;
+}
+tei-stage[place=right] {
   text-align: right;
 }
+tei-stage tei-persName {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
+}
+
+
 tei-stamp {
   display: block;
   margin-top: 1em;
