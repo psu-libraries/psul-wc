@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "npmClient": "yarn",
   "private": true,
-  "workspaces": ["elements/*"]
+  "useWorkspaces": true,
+  "workspaces": {
+    "packages": [
+      "elements/*",
+      "themes/*"
+    ],
+    "nohoist": []
+  }
 }
