@@ -25,14 +25,16 @@
     "storybook:build": "build-storybook"
   },
   "dependencies": {
-    "@lrnwebcomponents/anchor-behaviors": "^2.5.0",
-    "@lrnwebcomponents/simple-toast": "^2.6.8",
-    "@lrnwebcomponents/simple-tooltip":"^2.6.8",
+    "@lrnwebcomponents/anchor-behaviors": "^2.6.16",
+    "@lrnwebcomponents/simple-toast": "^2.6.17",
+    "@lrnwebcomponents/simple-tooltip": "^2.6.17",
+    "@lrnwebcomponents/simple-modal": "^2.6.18",
+    "@lrnwebcomponents/simple-popover": "^2.6.17",
     "@polymer/paper-icon-button": "^3.0.2",
     "@polymer/iron-icons": "^3.0.1",
     "@polymer/paper-toast": "^3.0.1",
     "lit-element": "^2.3.1",
-    "lit-html": "^1.1.2"
+    "lit-html": "^1.2.1"
   },
   "devDependencies": {
     "@open-wc/demoing-storybook": "^1.0.1",

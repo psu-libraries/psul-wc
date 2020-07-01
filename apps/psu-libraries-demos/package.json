@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "start:build": "es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
-    "build": "rimraf dist && rollup -c rollup.config.js && cp -r assets dist/assets",
-    "start": "es-dev-server --app-index index.html --node-resolve --open --watch --preserve-symlinks"
+    "start:build": "../../node_modules/.bin/es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
+    "build": "../../node_modules/.bin/rimraf dist && ../../node_modules/.bin/rollup -c rollup.config.js && cp -r assets dist/assets",
+    "start": "../../node_modules/.bin/es-dev-server -c ../../es-server-dev-config.js"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^0.21.0",

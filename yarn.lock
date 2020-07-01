@@ -1121,28 +1121,59 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@lrnwebcomponents/anchor-behaviors@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/anchor-behaviors/-/anchor-behaviors-2.5.0.tgz#be9720d894b98162b8e9b6b08654ef6a06bf5802"
-  integrity sha512-CoKak3hoCeSA5OlsBGH6ZmzPCPk1K3Zu4b63oLJdnLvlYPyRFsGBp3aD3IjulawFgJrn8K1FK3L2DuYCTUS2rw==
+"@lrnwebcomponents/absolute-position-behavior@^2.6.17":
+  version "2.6.17"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/absolute-position-behavior/-/absolute-position-behavior-2.6.17.tgz#6066a24368fadfc81d061090fe21f60e07690011"
+  integrity sha512-8hlnzLGwPOZNWq0m0ZiO8HkdbLkqjj5ajfVVChVJmKSDZjIClwqCZdS7Ks0Go4rwtgVUQqJQjaSz1xOuzh36zA==
+  dependencies:
+    "@polymer/iron-resizable-behavior" "^3.0.0"
+    lit-element "^2.3.1"
+
+"@lrnwebcomponents/anchor-behaviors@^2.6.16":
+  version "2.6.16"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/anchor-behaviors/-/anchor-behaviors-2.6.16.tgz#aa917f6caca31c24b609128f3ce10744cb4d4a3c"
+  integrity sha512-HgYy7agzVIXSeeTUDxbQ4eQbQUpZsahGMj3VdS364jXkQsbYjzYsyKLP6S8kQ9JEYsswJ1aeujdqBTdvtwMVcQ==
   dependencies:
     "@polymer/polymer" "^3.3.1"
 
-"@lrnwebcomponents/simple-toast@^2.6.8":
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-toast/-/simple-toast-2.6.8.tgz#4bdf7a93bb24dd08ab7e453f9d3a171659dd15d6"
-  integrity sha512-gYcfwT7xhxuPUwxzGB3wLvIbFO8TE7xk0qX/HUSGV5hsPR7G1Dk3IjX6JHKg4HVqxFUfvZynFCA02K1PiU19lA==
+"@lrnwebcomponents/simple-modal@^2.6.18":
+  version "2.6.18"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-modal/-/simple-modal-2.6.18.tgz#3bc00851816952a16bb7b494eecde5c97c4eeec7"
+  integrity sha512-jwqyeEeuAcKWD5nvF271Pru3BBdQ+3ii1iFiXOY0BQQqOjCQ57shentDfFaAGXzXb61WEmCcjJHs6JnAKvLp8A==
+  dependencies:
+    "@polymer/iron-icon" "^3.0.1"
+    "@polymer/iron-icons" "^3.0.1"
+    "@polymer/neon-animation" "^3.0.1"
+    "@polymer/paper-button" "^3.0.1"
+    "@polymer/paper-dialog" "^3.0.1"
+    "@polymer/paper-dialog-scrollable" "^3.0.1"
+    "@polymer/polymer" "^3.3.1"
+    web-animations-js "2.3.2"
+
+"@lrnwebcomponents/simple-popover@^2.6.17":
+  version "2.6.17"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-popover/-/simple-popover-2.6.17.tgz#816de76f1011cc548b72c87065d5ad3b0706553f"
+  integrity sha512-VpFyXsOYnCiDr3xBccBqR2jB23H7suwCrEKfQKt+0TxxHycNgpu8mkuSR4S3enUcAPBmqen5rC2fjVT2dR8NoA==
+  dependencies:
+    "@lrnwebcomponents/absolute-position-behavior" "^2.6.17"
+    "@polymer/polymer" "^3.3.1"
+    lit-element "^2.3.1"
+
+"@lrnwebcomponents/simple-toast@^2.6.17":
+  version "2.6.17"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-toast/-/simple-toast-2.6.17.tgz#686119f0dc5dba1ec23868402b89425bc856eb28"
+  integrity sha512-WrHbLdUp2PY3pSKSiEap2s1aTUgO2fmKmVRyBFhmoRumzLWTxlPY5XHwtICPLRDKVA5CmQv5fWwIV1zhXMgAKA==
   dependencies:
     "@polymer/paper-button" "^3.0.1"
     "@polymer/paper-toast" "^3.0.1"
-    lit-element "^2.3.0"
+    lit-element "^2.3.1"
 
-"@lrnwebcomponents/simple-tooltip@^2.6.8":
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-tooltip/-/simple-tooltip-2.6.8.tgz#dd0cb56c655a9e612b54592d40587c8250dc82f2"
-  integrity sha512-2+Z8i4wmwki6AjXF/9tCtHSernpTMXNAQoFJcqtPvBW53Vtp9uKu700FLaDGVn0SwAXd4NXzqTtKBhn/RJRtrQ==
+"@lrnwebcomponents/simple-tooltip@^2.6.17":
+  version "2.6.17"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-tooltip/-/simple-tooltip-2.6.17.tgz#207458c74a10a675842e9460d96f98e2eba7a41e"
+  integrity sha512-bkHJQzBMkOVEcR8baiXfxxNunIaOm1shB2HDuIloyuV81P0MjjjhpPntvZvDRJg3MRNivFnH8EIV/l3ielAqpA==
   dependencies:
-    lit-element "^2.3.0"
+    lit-element "^2.3.1"
 
 "@mdjs/core@^0.1.6":
   version "0.1.6"
@@ -1461,7 +1492,7 @@
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/iron-icon@^3.0.0-pre.26":
+"@polymer/iron-icon@^3.0.0-pre.26", "@polymer/iron-icon@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-icon/-/iron-icon-3.0.1.tgz#93211c39d8825fe4965a68419566036c1df291eb"
   integrity sha512-QLPwirk+UPZNaLnMew9VludXA4CWUCenRewgEcGYwdzVgDPCDbXxy6vRJjmweZobMQv/oVLppT2JZtJFnPxX6g==
@@ -1504,10 +1535,17 @@
     "@polymer/iron-resizable-behavior" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/iron-resizable-behavior@^3.0.0-pre.26":
+"@polymer/iron-resizable-behavior@^3.0.0", "@polymer/iron-resizable-behavior@^3.0.0-pre.26":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-resizable-behavior/-/iron-resizable-behavior-3.0.1.tgz#e284348ed7c1c7e263f7039297532fa954025ea2"
   integrity sha512-FyHxRxFspVoRaeZSWpT3y0C9awomb4tXXolIJcZ7RvXhMP632V5lez+ch5G5SwK0LpnAPkg35eB0LPMFv+YMMQ==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/iron-selector@^3.0.0-pre.26":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-selector/-/iron-selector-3.0.1.tgz#e845bec58489c96b4e7609525532437869ad5a88"
+  integrity sha512-sBVk2uas6prW0glUe2xEJJYlvxmYzM40Au9OKbfDK2Qekou/fLKcBRyIYI39kuI8zWRaip8f3CI8qXcUHnKb1A==
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
@@ -1517,6 +1555,15 @@
   integrity sha512-wwpYh6wOa4fNI+jH5EYKC7TVPYQ2OfgQqocWat7GsNWcsblKYhLYbwsvEY5nO0n2xKqNfZzDLrUom5INJN7msQ==
   dependencies:
     "@polymer/iron-meta" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/neon-animation@^3.0.0-pre.26", "@polymer/neon-animation@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/neon-animation/-/neon-animation-3.0.1.tgz#6658e4b524abc057477772a7473292493d366c24"
+  integrity sha512-cDDc0llpVCe0ATbDS3clDthI54Bc8YwZIeTGGmBJleKOvbRTUC5+ssJmRL+VwVh+VM5FlnQlx760ppftY3uprg==
+  dependencies:
+    "@polymer/iron-resizable-behavior" "^3.0.0-pre.26"
+    "@polymer/iron-selector" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
 "@polymer/paper-behaviors@^3.0.0-pre.27":
@@ -1537,6 +1584,35 @@
     "@polymer/iron-flex-layout" "^3.0.0-pre.26"
     "@polymer/paper-behaviors" "^3.0.0-pre.27"
     "@polymer/paper-styles" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/paper-dialog-behavior@^3.0.0-pre.26":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-dialog-behavior/-/paper-dialog-behavior-3.0.1.tgz#819b2fbb9444c1c318ddf55f02819bb29a85657b"
+  integrity sha512-wbI4kCK8le/9MHT+IXzvHjoatxf3kd3Yn0tgozAiAwfSZ7N4Ubpi5MHrK0m9S9PeIxKokAgBYdTUrezSE5378A==
+  dependencies:
+    "@polymer/iron-overlay-behavior" "^3.0.0-pre.27"
+    "@polymer/paper-styles" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/paper-dialog-scrollable@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-dialog-scrollable/-/paper-dialog-scrollable-3.0.1.tgz#42fd30380320e6dd6d4d68b2ac4e45ee9e5e024f"
+  integrity sha512-1E8B9kNdL58jUrJ/BwqJeOoNVcxNrB559z//d1V0rVHWT5bWCCZegwS3G06iFK5MjxWFbIKzleVTLrT0opiZkA==
+  dependencies:
+    "@polymer/iron-flex-layout" "^3.0.0-pre.26"
+    "@polymer/paper-dialog-behavior" "^3.0.0-pre.26"
+    "@polymer/paper-styles" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/paper-dialog@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-dialog/-/paper-dialog-3.0.1.tgz#728ebdbfc4d35ec1485e543434cef5dba476f15e"
+  integrity sha512-KvglYbEq7AWJvui2j6WKLnOvgVMeGjovAydGrPRj7kVzCiD49Eq/hpYFJTRV5iDcalWH+mORUpw+jrFnG9+Kgw==
+  dependencies:
+    "@polymer/iron-overlay-behavior" "^3.0.0-pre.27"
+    "@polymer/neon-animation" "^3.0.0-pre.26"
+    "@polymer/paper-dialog-behavior" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
 "@polymer/paper-icon-button@^3.0.2":
@@ -6060,14 +6136,14 @@ listr@^0.14.2:
     p-map "^2.0.0"
     rxjs "^6.3.3"
 
-lit-element@^2.2.1, lit-element@^2.3.0, lit-element@^2.3.1:
+lit-element@^2.2.1, lit-element@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
   integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==
   dependencies:
     lit-html "^1.1.1"
 
-lit-html@^1.0.0, lit-html@^1.1.1, lit-html@^1.1.2:
+lit-html@^1.0.0, lit-html@^1.1.1, lit-html@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.2.1.tgz#1fb933dc1e2ddc095f60b8086277d4fcd9d62cc8"
   integrity sha512-GSJHHXMGLZDzTRq59IUfL9FCdAlGfqNp/dEa7k7aBaaWD+JKaCjsAk9KYm2V12ItonVaYx2dprN66Zdm1AuBTQ==
@@ -9570,6 +9646,11 @@ warning@^4.0.2, warning@^4.0.3:
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
     loose-envify "^1.0.0"
+
+web-animations-js@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/web-animations-js/-/web-animations-js-2.3.2.tgz#a51963a359c543f97b47c7d4bc2d811f9fc9e153"
+  integrity sha512-TOMFWtQdxzjWp8qx4DAraTWTsdhxVSiWa6NkPFSaPtZ1diKUxTn4yTix73A1euG1WbSOMMPcY51cnjTIHrGtDA==
 
 web-namespaces@^1.0.0, web-namespaces@^1.1.2:
   version "1.1.4"

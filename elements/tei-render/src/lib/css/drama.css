@@ -4,12 +4,12 @@
 }
 tei-render {
   display:block;
-  margin-left: 2em;
-  padding: 2.5em;
+  margin-left: 1em;
+  padding: 1em;
 }
 tei-tei {
-  max-width: 35em;
-  width: 75%;
+  /* max-width: 35em; */
+  /* width: 75%; */
 }
 tei-choice tei-abbr + tei-expan:before,
 tei-choice tei-expan + tei-abbr:before,
@@ -771,16 +771,22 @@ tei-kinesic {
 /* l */
 tei-l {
   display: block;
-  padding-left: 2em;
+  width: 90%;
+  padding-left: 6em;
 }
 tei-l[data-lineno]:before {
   content: attr(data-lineno);
   position: absolute;
   right: 6em;
 }
-
+tei-l:hover {
+  background-color: #dedede;
+}
 tei-l paper-icon-button {
   visibility: collapse;
+  position: absolute;
+  margin-top: -0.6em;
+  right: 9em;
 }
 tei-l:hover paper-icon-button {
   /* Empty Rule Set */
@@ -788,8 +794,10 @@ tei-l:hover paper-icon-button {
 } 
 
 tei-lg > tei-l:first-of-type {
-  display: inline;
-  margin-left: 0.75em;
+  display: block;
+  padding-left: 0em;
+  margin-left: 5.95em;
+  margin-top: -1.45em;
 }
 tei-lacunaEnd {
   /* Empty Rule Set */
@@ -1089,7 +1097,7 @@ tei-normalization {
   /* Empty Rule Set */
 }
 tei-note {
-  display: block;
+  /* display: block;
   margin: 1.5em auto 1.5em auto;
   padding: .5em 1.5em 1.5em 1.5em;
   border: 1px solid black;
@@ -1101,13 +1109,18 @@ tei-note {
   text-align: left;
   /* reset text-indent for note with <l> ancestors. */
   
-  text-indent: 0;
+  /* text-indent: 0;
   font-size: 85%;
   text-align: justify;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); */
  
+}
+
+tei-note simple-popover {
+  width:50%;
+  line-height: 1.1em;
 }
 tei-notesStmt {
   /* do we want to box each individual <note> if they're in a <notesStmt>? */
@@ -1586,7 +1599,10 @@ tei-sourceDesc {
 }
 tei-sp {
   /*empty rule set*/
+  margin-top: .75em;
   display: block;
+  margin-right: 2em;
+  width:100%;
 }
 tei-space:before {
   font-weight: bold;
@@ -1607,9 +1623,8 @@ tei-spanGrp {
 tei-speaker {
   font-weight: 900;
   text-decoration: underline;
-  margin-right: 0;
-  display: inline;
-  float: left;
+  margin-right: 2em;
+  display: inline-block;
 }
 tei-specDesc {
   /* NOT SURE, look back on */
@@ -1634,16 +1649,39 @@ tei-sponsor:before {
   content: "Sponsor:";
 }
 tei-stage {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  position: relative;
+  /* margin-top: -1em; */
+  margin-bottom: 0em;
+  padding-top: 0;
+  padding-bottom: 0;
   font-style: italic;
+  z-index: 0;
+}
+tei-stage:before {
+  content: "[ "
+}
+tei-stage:after {
+  content: " ]"
 }
 tei-stage[place=center] {
+  display: inline-block;
   text-align: center;
+  min-width: 35em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 tei-stage[place=right] {
+  float: right;
+  padding-right: 6.25em;
   text-align: right;
+}
+
+tei-body > tei-div > tei-div > tei-stage[place=right],
+tei-body > tei-div > tei-div > tei-div > tei-stage[place=right],
+tei-body > tei-div > tei-div > tei-div > tei-sp > tei-stage[place=right] {
+  margin-right: 12.5em;
+  padding-right: 0;
 }
 tei-stage tei-persName {
   font-family: Georgia, 'Times New Roman', Times, serif;
