@@ -5,6 +5,7 @@ import "@polymer/paper-icon-button/paper-icon-button.js";
 import "@lrnwebcomponents/anchor-behaviors/anchor-behaviors.js";
 import "@lrnwebcomponents/simple-toast/simple-toast.js";
 import "@lrnwebcomponents/simple-tooltip";
+import "@psul/tei-render/src/lib/tei-note.js";
 import { setPassiveTouchGestures } from "@polymer/polymer/lib/utils/settings.js";
 
 const validModes = () => {
