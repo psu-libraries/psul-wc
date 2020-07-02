@@ -1655,7 +1655,6 @@ tei-stage {
   padding-top: 0;
   padding-bottom: 0;
   font-style: italic;
-  z-index: 0;
 }
 tei-stage:before {
   content: "[ "
