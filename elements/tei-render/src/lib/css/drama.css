@@ -1680,10 +1680,14 @@ tei-stage[place=right] {
   padding-right: 0em;
   text-align: right;
 }
-tei-l > tei-stage[place=right],
 tei-l + tei-l > tei-stage[place=right] {
   /* indented with line numbers */
-  color:orange;
+  color: pink;
+  margin-right: 6.4em;
+}
+tei-l > tei-stage[place=right] {
+  /* indented with line numbers */
+  color: orange;
 }
 tei-div > tei-stage[place=right],
 tei-sp > tei-stage[place=right],
