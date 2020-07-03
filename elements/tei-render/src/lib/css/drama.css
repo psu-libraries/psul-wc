@@ -793,12 +793,14 @@ tei-l:hover paper-icon-button {
   /* Empty Rule Set */
   visibility: visible;
 } 
-
 tei-lg > tei-l:first-of-type {
   display: block;
   padding-left: 0em;
   margin-left: 5.95em;
   margin-top: -1.45em;
+}
+tei-l + tei-l > tei-stage {
+  margin-right: -5.35em;
 }
 tei-lacunaEnd {
   /* Empty Rule Set */
