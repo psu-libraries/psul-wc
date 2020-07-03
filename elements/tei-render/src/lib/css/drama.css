@@ -799,9 +799,6 @@ tei-lg > tei-l:first-of-type {
   margin-left: 5.95em;
   margin-top: -1.45em;
 }
-tei-l + tei-l > tei-stage {
-  margin-right: -5.35em;
-}
 tei-lacunaEnd {
   /* Empty Rule Set */
 }
@@ -1659,6 +1656,11 @@ tei-stage {
   padding-bottom: 0;
   font-style: italic;
 }
+tei-stage:not([place]){
+  color:purple;
+  display: inline-block;
+  margin-right:0px;
+}
 tei-stage:before {
   content: "[ "
 }
@@ -1675,22 +1677,25 @@ tei-stage[place=center] {
 }
 tei-stage[place=right] {
   float: right;
-  padding-right: 6.25em;
+  padding-right: 0em;
   text-align: right;
 }
-
-tei-body > tei-div > tei-div > tei-stage[place=right],
-tei-body > tei-div > tei-div > tei-div > tei-stage[place=right],
-tei-body > tei-div > tei-div > tei-div > tei-sp > tei-stage[place=right] {
-  margin-right: 12.5em;
-  padding-right: 0;
+tei-l > tei-stage[place=right],
+tei-l + tei-l > tei-stage[place=right] {
+  /* indented with line numbers */
+  color:orange;
+}
+tei-div > tei-stage[place=right],
+tei-sp > tei-stage[place=right],
+tei-lg > tei-stage[place=right] {
+  /* full-right alignment */
+  color: green;
+  margin-right: 5.75em;
 }
 tei-stage tei-persName {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 900;
 }
-
-
 tei-stamp {
   display: block;
   margin-top: 1em;
