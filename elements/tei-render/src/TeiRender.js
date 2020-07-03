@@ -222,8 +222,8 @@ export class TeiRender extends LitElement {
           button.setAttribute('icon',this.linkIcon);
           button.setAttribute('label',this.linkLabel);
           button.addEventListener('click', e=>this._handleCopyClick(lineId));
-          line.append(button);
-          // line.prepend(button);
+          // line.append(button);
+          line.prepend(button);
         });
         // let tbutton = document.createElement('paper-icon-button');
         //   tbutton.setAttribute('icon',this.closeIcon);

@@ -784,9 +784,10 @@ tei-l:hover {
 }
 tei-l paper-icon-button {
   visibility: collapse;
-  position: absolute;
   margin-top: -0.6em;
-  right: 9em;
+  /* right-side line link
+  position: absolute;
+  right: 9em; */
 }
 tei-l:hover paper-icon-button {
   /* Empty Rule Set */
