@@ -1682,19 +1682,19 @@ tei-stage[place=right] {
 }
 tei-l + tei-l > tei-stage[place=right] {
   /* indented with line numbers */
-  color: pink;
+  /* color: pink; */
   margin-right: -12.7em;
 }
 tei-l > tei-stage[place=right] {
   /* indented with line numbers */
-  color: orange;
+  /* color: orange; */
   margin-right: -6.9em
 }
 tei-div > tei-stage[place=right],
 tei-sp > tei-stage[place=right],
 tei-lg > tei-stage[place=right] {
   /* full-right alignment */
-  color: green;
+  /* color: green; */
   margin-right: -7.65em;
 }
 tei-stage tei-persName {
