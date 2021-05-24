@@ -267,7 +267,7 @@ export class TeiRender extends LitElement {
       }
     }
     // Go get the associated css file
-    fetch(`${this.basePath}/${pathAssetCss}/${mode}.css`).then((data) => {
+    fetch(`${this.basePath}/${this.pathAssetCss}/${mode}.css`).then((data) => {
       // return response as plain text
       return data.text();
     }).then((data) => {
