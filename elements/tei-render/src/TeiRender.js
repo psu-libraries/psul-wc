@@ -28,6 +28,8 @@ export class TeiRender extends LitElement {
     this.mode = 'drama';
     // this is some btopro sauce to get the correct base path
     this.basePath = this.pathFromUrl(decodeURIComponent(import.meta.url));
+    // used to change the path to css files
+    this.pathAssetCss = "../lib/css";
     // elements for toast
     this.closeIcon = "close";
     this.closeLabel = "Close";
@@ -56,6 +58,12 @@ export class TeiRender extends LitElement {
        * presentation mode / topic matter
        */
       mode: {
+        type: String,
+      },
+      /**
+       * presentation basePath extension
+       */
+      pathAssetCss: {
         type: String,
       },
       /**
@@ -259,7 +267,7 @@ export class TeiRender extends LitElement {
       }
     }
     // Go get the associated css file
-    fetch(`${this.basePath}/../lib/css/${mode}.css`).then((data) => {
+    fetch(`${this.basePath}/${pathAssetCss}/${mode}.css`).then((data) => {
       // return response as plain text
       return data.text();
     }).then((data) => {
