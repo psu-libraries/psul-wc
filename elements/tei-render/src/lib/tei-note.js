@@ -1,6 +1,4 @@
 import { LitElement, html, css } from "lit-element/lit-element.js";
-import "@polymer/iron-icons/av-icons.js";
-//import "@polymer/paper-button/paper-button.js";
 import "@lrnwebcomponents/simple-popover/simple-popover.js";
 
 class TeiNote extends LitElement {

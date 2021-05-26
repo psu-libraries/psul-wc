@@ -1,6 +1,4 @@
 import { LitElement, html, css } from "lit-element/lit-element.js";
-import "@polymer/iron-icons/av-icons.js";
-import "@polymer/paper-icon-button/paper-icon-button.js";
 import "@lrnwebcomponents/simple-modal/lib/simple-modal-template.js";
 
 class TeiPB extends LitElement {
@@ -46,12 +44,12 @@ class TeiPB extends LitElement {
       super.firstUpdated();
     }
     setTimeout(() => {
-      this.shadowRoot.querySelector('simple-modal-template').associateEvents(this.shadowRoot.querySelector('paper-icon-button'));      
+      this.shadowRoot.querySelector('simple-modal-template').associateEvents(this.shadowRoot.querySelector('simple-icon-button-lite'));      
     }, 0);
   }
   render() {
     return html`
-    <paper-icon-button title="${this.title}" icon="${this.icon}"></paper-icon-button>!
+    <simple-icon-button-lite label="${this.title}" icon="${this.icon}"></simple-icon-button-lite>!
     <simple-modal-template title="${this.title}">
       <div slot="content"><slot></slot></div>
     </simple-modal-template>
