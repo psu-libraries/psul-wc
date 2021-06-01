@@ -1,13 +1,7 @@
-import { LitElement, html } from "lit-element/lit-element.js";
+import { LitElement } from "lit-element/lit-element.js";
 import { CETEI } from './lib/ceteicean.js';
-import "@polymer/iron-icons/iron-icons.js";
-import "@polymer/paper-icon-button/paper-icon-button.js";
 import "@lrnwebcomponents/anchor-behaviors/anchor-behaviors.js";
-import "@lrnwebcomponents/simple-toast/simple-toast.js";
-import "@lrnwebcomponents/simple-tooltip/simple-tooltip.js";
 import "./lib/tei-note.js";
-import { setPassiveTouchGestures } from "@polymer/polymer/lib/utils/settings.js";
-
 const validModes = () => {
   return {
     drama: "Drama",
@@ -20,7 +14,6 @@ export class TeiRender extends LitElement {
    */
   constructor() {
     super();
-    setPassiveTouchGestures(true);
     // tee up the initial constructor
     this.CETEIcean = new CETEI();
     this.src = null;
@@ -41,7 +34,7 @@ export class TeiRender extends LitElement {
     this.lineStart = 1;
     this.pageIcon = "description";
     this.pageLabel = "See the original page";
-    window.SimpleToast.requestAvailability();
+    import("@lrnwebcomponents/simple-icon/lib/simple-icon-button-lite.js");
   }
   /**
    * LitElement / popular convention
@@ -189,7 +182,7 @@ export class TeiRender extends LitElement {
           "pb": function (elt) {
             // elt.innerHTML = elt.parentNode.lastChild.textContent;
             // elt.parentNode.lastChild.textContent = '';
-            let pbutton = document.createElement('paper-icon-button');
+            let pbutton = document.createElement('simple-icon-button-lite');
             pbutton.setAttribute('icon',"description");
             pbutton.setAttribute('label',this.pageLabel);
             let pblinked = document.createElement('a');
@@ -219,7 +212,7 @@ export class TeiRender extends LitElement {
           // set the line ID
           let currentLineNumber=i+1
           let lineId = `${lineIdPrefix}-${currentLineNumber}`, 
-            button = document.createElement('paper-icon-button');
+            button = document.createElement('simple-icon-button-lite');
           line.setAttribute('id',lineId);
           // set the line margin identifier for nth Line
           if( currentLineNumber % this.lineDisplay === 0 || currentLineNumber === 1 ){
@@ -233,17 +226,10 @@ export class TeiRender extends LitElement {
           // line.append(button);
           line.prepend(button);
         });
-        // let tbutton = document.createElement('paper-icon-button');
+        // let tbutton = document.createElement('simple-icon-button-lite');
         //   tbutton.setAttribute('icon',this.closeIcon);
         //   tbutton.setAttribute('label',this.closeLabel);
         //   tbutton.addEventListener('click', this.closeCopyLink);
-        // this.toast = document.createElement('paper-toast');
-        // this.toast.id ="relative-heading-toast";
-        // this.toast.duration = 5000;
-        // this.toast.appendChild(tbutton);
-        // this.appendChild(this.toast);
-        // console.log('toasty!',this.toast);
-
       });
     } catch (error) {
       console.log("Error in getting the document.")
@@ -317,27 +303,17 @@ export class TeiRender extends LitElement {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    
-    const evt = new CustomEvent("simple-toast-show", {
-      bubbles: true,
-      composed: true,
-      cancelable: true,
-      detail: {
-        text: `Copied link ${this.currentLineId} to your clipboard`,
-        duration: 3000
-      }
+    import("@lrnwebcomponents/simple-toast/simple-toast.js").then(() => {
+      this.dispatchEvent(new CustomEvent("simple-toast-show", {
+        bubbles: true,
+        composed: true,
+        cancelable: true,
+        detail: {
+          text: `Copied link ${this.currentLineId} to your clipboard`,
+          duration: 3000
+        }
+      }));
     });
-    // window.dispatchEvent(evt); // to handle toast from window
-    this.dispatchEvent(evt); // to handle toast from tei-render
-
-    // console.log('yeah toast!',this.toast);
-    // if (
-    //   this.toast &&
-    //   this.toast.open
-    // )
-    //   this.toast.text = `${this.copyMessage}: ${this
-    //     .currentLineId}`;
-    //   this.toast.open();
   }
 
 
