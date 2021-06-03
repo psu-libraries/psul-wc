@@ -777,7 +777,7 @@ tei-l {
 tei-l[data-lineno]:before {
   content: attr(data-lineno);
   position: absolute;
-  right: 6em;
+  right: -10em;
 }
 tei-l:hover {
   background-color: #dedede;
@@ -1808,6 +1808,7 @@ tei-border: 1px solid black;
 tei-background:white;
 tei-*/
   line-height: 1.5;
+  position: relative;
 }
 tei-textClass {
   display: none;
