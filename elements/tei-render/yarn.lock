@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@a11y/focus-trap@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@a11y/focus-trap/-/focus-trap-1.0.5.tgz#0748189c37ca21255c702aa5de3ee00ed4821d22"
+  integrity sha512-3JOd6g+BALysWS8LNf0qdB8ltR651H/RCLAvUmfS0LIHwHO579XfjZUIZbURYiAZrcbp1CBAq4QZ2YwKNQZ1hw==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5", "@babel/code-frame@^7.8.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -1110,6 +1115,77 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@lrnwebcomponents/absolute-position-behavior@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/absolute-position-behavior/-/absolute-position-behavior-3.0.6.tgz#94ffe8e21e2e0d9222425f9ec1c655d67856344f"
+  integrity sha512-dbu56Kqh8Vyl7SlmE7vEH81al94D2rY2r3aHE4D1XmWvgYtNCgz8VWVSPwrwlbIYT1hKmdQ1Vz5Usqxvoe3liA==
+  dependencies:
+    lit-element "2.4.0"
+
+"@lrnwebcomponents/anchor-behaviors@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/anchor-behaviors/-/anchor-behaviors-3.0.5.tgz#28b3f9d4431c1f58b27d91272283b575be3f1f68"
+  integrity sha512-SnKQM5mzgWKPHqjIze2c9n/SATuY3OuUaYDfiK8KmCWxean8xaUr+LIbCuPuMaW28JX0JvDdJKwfbyDE8YyUjA==
+  dependencies:
+    "@polymer/polymer" "^3.3.1"
+
+"@lrnwebcomponents/simple-colors-shared-styles@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-colors-shared-styles/-/simple-colors-shared-styles-3.0.5.tgz#e17f0f067e864e43e8cc7bf058daedbb060fe8b6"
+  integrity sha512-WJ5t/8SzTSxBPkmmWgOmD0wuS+nf0gccQH6PXeMlBv6MXU/+uGCih5dPMJg/iRRqOo13diRBfeCT0IvfJEQF7A==
+  dependencies:
+    lit-element "2.4.0"
+
+"@lrnwebcomponents/simple-colors@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-colors/-/simple-colors-3.0.6.tgz#a783d71fb7223104c5e40736a745ffa192bfe0ed"
+  integrity sha512-1JRgYDa9RPFzDntZ82CWOLgnRYy6by+mDQbgTWbmvHYS38sGd2B7UyQ67fmUTdJMR+LL7uL/EZKQJVQmdISKrw==
+  dependencies:
+    "@lrnwebcomponents/simple-colors-shared-styles" "^3.0.5"
+    "@lrnwebcomponents/simple-picker" "^3.0.6"
+    lit-element "2.4.0"
+
+"@lrnwebcomponents/simple-icon@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-icon/-/simple-icon-3.0.6.tgz#aee42b9cf9a2b0798a4d369d0e00a9cbed81dc2a"
+  integrity sha512-sp+dbqtW0MmxHnlcvpAIcbj/rM2DR6z2Dvd3ur1s99XnX9mmli3b6gmUUyVhQOOR3qz5J1GG6nHxTEgwxByNIA==
+  dependencies:
+    "@lrnwebcomponents/simple-colors" "^3.0.6"
+    lit-element "2.4.0"
+
+"@lrnwebcomponents/simple-modal@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-modal/-/simple-modal-3.0.6.tgz#c6ffe76f553eaf77126206739583bc75e8cbcfff"
+  integrity sha512-xPcTW+VaMNGNQxR0q4CxygtPVAumcS346h2zM7r//Kvy5ErFlXfQDyTajmN5li+14asPXMNXzGYJOTcvupCEyA==
+  dependencies:
+    "@lrnwebcomponents/simple-icon" "^3.0.6"
+    lit-element "2.4.0"
+    web-dialog "0.0.11"
+
+"@lrnwebcomponents/simple-picker@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-picker/-/simple-picker-3.0.6.tgz#fde5340ed066949376be87115198979250593ce3"
+  integrity sha512-a5dvc8AC6hrbKTjG4WdgnSWSolvWYgb5ZkOTACpoLndHViSWkopK5W/pi6cyWKvCcQXDvz/dNQkwE6xvKus6qQ==
+  dependencies:
+    "@lrnwebcomponents/simple-icon" "^3.0.6"
+    lit-element "2.4.0"
+
+"@lrnwebcomponents/simple-popover@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-popover/-/simple-popover-3.0.6.tgz#86c424ae68e3a6cf1737b03be1b5038c4ee8feeb"
+  integrity sha512-naCs0i7OYgwpNhzRLbMEb4LMKL2W8ugQ4/nXXIbu3ms2LwibyQvBimVW6GWz1YXtlOffKZHTIt3J+yWL8KpBeA==
+  dependencies:
+    "@lrnwebcomponents/absolute-position-behavior" "^3.0.6"
+    lit-element "2.4.0"
+
+"@lrnwebcomponents/simple-toast@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@lrnwebcomponents/simple-toast/-/simple-toast-3.0.6.tgz#5cef97e13945bac7a6cada8b058d5c03a94fa9de"
+  integrity sha512-euckYhZM4+60Hb6fdlcDP0NyKlbFbQhjOQUrtSsAdvQ/ZiJII5KTPiaz9OSibcyXM3A1nWHVwz/9L+pSpNcQBg==
+  dependencies:
+    "@lrnwebcomponents/simple-colors" "^3.0.6"
+    lit-element "2.4.0"
+
 "@mdx-js/loader@^1.5.1":
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.5.5.tgz#b658534153b3faab8f93ffc790c868dacc5b43d3"
@@ -1329,6 +1405,13 @@
     chai-dom "^1.8.1"
     mocha "^6.2.2"
     sinon-chai "^3.3.0"
+
+"@polymer/polymer@^3.3.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.4.1.tgz#333bef25711f8411bb5624fb3eba8212ef8bee96"
+  integrity sha512-KPWnhDZibtqKrUz7enIPOiO4ZQoJNOuLwqrhV2MXzIt3VVnUVJVG5ORz4Z2sgO+UZ+/UZnPD0jqY+jmw/+a9mQ==
+  dependencies:
+    "@webcomponents/shadycss" "^1.9.1"
 
 "@reach/router@^1.2.1":
   version "1.3.1"
@@ -1715,6 +1798,11 @@
   integrity sha512-XAvHLwG7UQ+8M4caKIH0ZozIOYay5fQkAgyIXegXT9jPtdIGdhga+sUEdAr1CiG46aB+c64xQEYyEzlwWVTNzA==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@webcomponents/shadycss@^1.9.1":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@webcomponents/shadycss/-/shadycss-1.10.2.tgz#40e03cab6dc5e12f199949ba2b79e02f183d1e7b"
+  integrity sha512-9Iseu8bRtecb0klvv+WXZOVZatsRkbaH7M97Z+f+Pt909R4lDfgUODAnra23DOZTpeMTAkVpf4m/FZztN7Ox1A==
 
 "@webcomponents/webcomponentsjs@^2.4.0":
   version "2.4.1"
@@ -4185,9 +4273,9 @@ github-slugger@^1.0.0:
     emoji-regex ">=6.0.0 <=6.1.1"
 
 glob-parent@^5.0.0, glob-parent@~5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.0.tgz#5f4c1d1e748d30cd73ad2944b3577a81b081e8c2"
-  integrity sha512-qjtRgnIVmOfnKUE3NJAQEdk+lKrxfw8t5ke7SXtfMTHcjsBfOfWXCQfdb30zfDoZQ2IRSIiidmjtbHZPZ++Ihw==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
+  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
 
@@ -5670,17 +5758,36 @@ listr@^0.14.2:
     p-map "^2.0.0"
     rxjs "^6.3.3"
 
-lit-element@^2.0.1, lit-element@^2.2.1:
+lit-element@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.4.0.tgz#b22607a037a8fc08f5a80736dddf7f3f5d401452"
+  integrity sha512-pBGLglxyhq/Prk2H91nA0KByq/hx/wssJBQFiYqXhGDvEnY31PRGYf1RglVzyLeRysu0IHm2K0P196uLLWmwFg==
+  dependencies:
+    lit-html "^1.1.1"
+
+lit-element@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.5.1.tgz#3fa74b121a6cd22902409ae3859b7847d01aa6b6"
+  integrity sha512-ogu7PiJTA33bEK0xGu1dmaX5vhcRjBXCFexPja0e7P7jqLhTpNKYRPmE+GmiCaRVAbiQKGkUgkh/i6+bh++dPQ==
+  dependencies:
+    lit-html "^1.1.1"
+
+lit-element@^2.0.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.2.1.tgz#79c94d8cfdc2d73b245656e37991bd1e4811d96f"
   integrity sha512-ipDcgQ1EpW6Va2Z6dWm79jYdimVepO5GL0eYkZrFvdr0OD/1N260Q9DH+K5HXHFrRoC7dOg+ZpED2XE0TgGdXw==
   dependencies:
     lit-html "^1.0.0"
 
-lit-html@^1.0.0, lit-html@^1.1.2:
+lit-html@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.1.2.tgz#2e3560a7075210243649c888ad738eaf0daa8374"
   integrity sha512-FFlUMKHKi+qG1x1iHNZ1hrtc/zHmfYTyrSvs3/wBTvaNtpZjOZGWzU7efGYVpgp6KvWeKF6ql9/KsCq6Z/mEDA==
+
+lit-html@^1.1.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.4.1.tgz#0c6f3ee4ad4eb610a49831787f0478ad8e9ae5e0"
+  integrity sha512-B9btcSgPYb1q4oSOb/PrOT6Z/H+r6xuNzfH4lFli/AWhYwdtrgQkQWBbIc6mdnf6E2IL3gDXdkkqNktpU0OZQA==
 
 load-json-file@^1.0.0:
   version "1.1.0"
@@ -8997,6 +9104,13 @@ warning@^4.0.2, warning@^4.0.3:
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
     loose-envify "^1.0.0"
+
+web-dialog@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/web-dialog/-/web-dialog-0.0.11.tgz#0cd9b25c560fdad01bb84b6754ee5d1ba5fe9562"
+  integrity sha512-UGXpUfww+U2zWJCwb8uE0zeiCjyq4gv54VpC2zuT4+sOdR/ukz7flp941472BY9TnI8RrK3S5TLL4K9AQycfwQ==
+  dependencies:
+    "@a11y/focus-trap" "^1.0.5"
 
 web-namespaces@^1.0.0, web-namespaces@^1.1.2:
   version "1.1.4"
