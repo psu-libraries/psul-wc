@@ -1660,11 +1660,11 @@ tei-stage:not([place]){
   display: inline-block;
   margin-right:0px;
 }
-tei-stage:before {
-  content: "[ "
+tei-stage[resp]:before {
+  content: "[ ";
 }
-tei-stage:after {
-  content: " ]"
+tei-stage[resp]:after {
+  content: " ]";
 }
 tei-stage[place=center] {
   display: inline-block;
