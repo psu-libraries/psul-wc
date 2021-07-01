@@ -1671,7 +1671,7 @@ tei-stage[place=center] {
   text-align: center;
   min-width: 35em;
   width: 100%;
-  margin-left: auto;
+  margin-left: 5.95em;
   margin-right: auto;
 }
 tei-stage[place=right] {
