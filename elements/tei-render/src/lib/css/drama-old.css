@@ -774,8 +774,6 @@ tei-l {
   display: block;
   width: 90%;
   padding-left: 6em;
-  scroll-margin-top: 40px;
-  text-indent: -40px;
 }
 tei-l[data-lineno]:before {
   content: attr(data-lineno);
@@ -785,18 +783,14 @@ tei-l[data-lineno]:before {
 tei-l:hover {
   background-color: #dedede;
 }
-tei-l a {
-  text-indent: 0;
-}
-tei-l paper-icon-button {
+tei-l simple-icon-button-lite {
   visibility: collapse;
   margin-top: -0.6em;
-  text-indent: 0;
   /* right-side line link
   position: absolute;
   right: 9em; */
 }
-tei-l:hover paper-icon-button {
+tei-l:hover simple-icon-button-lite {
   /* Empty Rule Set */
   visibility: visible;
 } 
@@ -1086,7 +1080,7 @@ tei-musicNotation:before {
 }
 /* n */
 tei-name {
-  font-weight: 900;
+  /* Empty Rule Set */
 }
 tei-nameLink {
   /* Empty Rule Set */
@@ -1220,10 +1214,8 @@ tei-pb {
   font-size: 11pt;
 }
 tei-pb {
-  --paper-icon-button: {
-    height: 50px;
-    width: 50px;
-}
+  --simple-icon-height: 36px;
+  --simple-icon-width: 36px;
 }
 /*
 tei-pb:before {
@@ -1445,7 +1437,6 @@ tei-rhyme {
 }
 tei-role {
   /* put on same line as roledesc? */
-  font-weight: 900;
 }
 tei-roleDesc {
   /* put on same line as role */
@@ -1662,7 +1653,6 @@ tei-stage {
   margin-bottom: 0em;
   padding-top: 0;
   padding-bottom: 0;
-  text-indent: 0;
   font-style: italic;
 }
 tei-stage:not([place]){
@@ -1670,18 +1660,18 @@ tei-stage:not([place]){
   display: inline-block;
   margin-right:0px;
 }
-tei-stage[resp]:before {
-  content: "[ ";
+tei-stage:before {
+  content: "[ "
 }
-tei-stage[resp]:after {
-  content: " ]";
+tei-stage:after {
+  content: " ]"
 }
 tei-stage[place=center] {
   display: inline-block;
   text-align: center;
   min-width: 35em;
   width: 100%;
-  margin-left: 5.95em;
+  margin-left: auto;
   margin-right: auto;
 }
 tei-stage[place=right] {

@@ -5,6 +5,7 @@ import "./lib/tei-note.js";
 const validModes = () => {
   return {
     drama: "Drama",
+    dramae: "DramaEdited",
     play: "Play"
   };
 };

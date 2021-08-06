@@ -516,10 +516,10 @@ tei-fw[type='pageNum']:after {
   content:"]";
 }
 tei-fw[type='sig'] {
-  /* Empty Rule Set */
+  display: none;
 }
 tei-fw[type='catch'] {
-  /* Empty Rule Set */
+  display: none;
 }
 /* g */
 tei-g {
