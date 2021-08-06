@@ -184,7 +184,7 @@ tei-publicationStmt > tei-availability[data-tei-status]:before {
 }
 /* B */
 tei-back {
-  display: block;
+  display: none;
 }
 tei-bibl {
   /* Empty Rule Set */
