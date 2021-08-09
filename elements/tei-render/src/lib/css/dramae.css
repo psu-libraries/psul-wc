@@ -788,7 +788,7 @@ tei-l:hover {
 tei-l a {
   text-indent: 0;
 }
-tei-l paper-icon-button {
+tei-l simple-icon-button-lite {
   visibility: collapse;
   margin-top: -0.6em;
   text-indent: 0;
@@ -796,7 +796,7 @@ tei-l paper-icon-button {
   position: absolute;
   right: 9em; */
 }
-tei-l:hover paper-icon-button {
+tei-l:hover simple-icon-button-lite {
   /* Empty Rule Set */
   visibility: visible;
 } 
@@ -1220,6 +1220,7 @@ tei-pb {
   font-size: 11pt;
 }
 tei-pb {
+  /* fix this syntax */
   --paper-icon-button: {
     height: 50px;
     width: 50px;
