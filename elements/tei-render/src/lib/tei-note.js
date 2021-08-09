@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit-element/lit-element.js";
 import "@lrnwebcomponents/simple-popover/simple-popover.js";
-import "@lrnwebcomponents/simple-icon/lib/simple-icon-button-lite.js";
+import "@lrnwebcomponents/simple-icon/simple-icon.js";
 
 class TeiNote extends LitElement {
   static get styles() {
@@ -20,7 +20,7 @@ class TeiNote extends LitElement {
         margin-left: auto;
         margin-right: 0;
       }
-      simple-icon-button-lite {
+      simple-icon {
         --simple-icon-height: 16px;
         --simple-icon-width: 16px;
       }
@@ -60,11 +60,11 @@ class TeiNote extends LitElement {
   render() {
     return html`
     <a href="javascript:void(0);" title="${this.title}" icon="${this.icon}" @click="${this.toggleStatus}">
-      <iron-icon icon="info-outline"></iron-icon>
+      <simple-icon icon="info-outline"></simple-icon>
     </a>
     <simple-popover auto ?hidden="${this.hiddenStatus}">
       <a href="javascript:void(0);" title="Close Popover" @click="${this.toggleStatus}">
-        <iron-icon icon="close"></iron-icon>
+        <simple-icon icon="close"></simple-icon>
       </a>
       <slot></slot>
     </simple-popover>

@@ -37,7 +37,6 @@ export class TeiRender extends LitElement {
     this.lineStart = 1;
     this.pageIcon = "description";
     this.pageLabel = "See the original page";
-    import("@lrnwebcomponents/simple-icon/lib/simple-icon-button-lite.js");
   }
   /**
    * LitElement / popular convention
