@@ -1,5 +1,6 @@
 import { LitElement, html, css } from "lit-element/lit-element.js";
 import "@lrnwebcomponents/simple-popover/simple-popover.js";
+import "@lrnwebcomponents/simple-icon/lib/simple-icon-button-lite.js";
 
 class TeiNote extends LitElement {
   static get styles() {
@@ -19,9 +20,9 @@ class TeiNote extends LitElement {
         margin-left: auto;
         margin-right: 0;
       }
-      iron-icon {
-        height: 16px;
-        width: 16px;
+      simple-icon-button-lite {
+        --simple-icon-height: 16px;
+        --simple-icon-width: 16px;
       }
     `];
   }
