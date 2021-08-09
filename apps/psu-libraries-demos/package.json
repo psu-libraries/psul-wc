@@ -18,7 +18,7 @@
   "dependencies": {
     "lit-html": "1.4.1",
     "lit-element": "2.5.1",
-    "@psul/tei-render": "^0.0.32"
+    "@psul/tei-render": "^0.0.33"
   },
   "private": true
 }
