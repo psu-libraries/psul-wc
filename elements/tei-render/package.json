@@ -28,7 +28,8 @@
     "@lrnwebcomponents/anchor-behaviors": "^3.0.5",
     "@lrnwebcomponents/simple-toast": "^3.0.6",
     "@lrnwebcomponents/simple-modal": "^3.0.6",
-    "@lrnwebcomponents/simple-popover": "^3.0.6",
+    "@lrnwebcomponents/simple-popover": "^3.0.7",
+    "@lrnwebcomponents/absolute-position-behavior": "^3.0.7",
     "@lrnwebcomponents/simple-icon": "^3.0.6",
     "lit-element": "2.5.1"
   },

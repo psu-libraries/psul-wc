@@ -16,10 +16,9 @@
   "author": "psu-libraries-demos",
   "license": "MIT",
   "dependencies": {
-    "lit-html": "^1.0.0",
-    "lit-element": "^2.0.1",
+    "lit-html": "1.4.1",
+    "lit-element": "2.5.1",
     "@psul/tei-render": "^0.0.32"
   },
-  "private": true,
-  "workspaces": ["elements/*"]
+  "private": true
 }

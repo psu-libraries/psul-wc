@@ -1,6 +1,8 @@
 import { LitElement } from "lit-element/lit-element.js";
 import { CETEI } from './lib/ceteicean.js';
 import "@lrnwebcomponents/anchor-behaviors/anchor-behaviors.js";
+import "@lrnwebcomponents/simple-toast/simple-toast.js";
+import "@lrnwebcomponents/simple-icon/lib/simple-icon-button-lite.js";
 import "./lib/tei-note.js";
 const validModes = () => {
   return {
@@ -138,15 +140,15 @@ export class TeiRender extends LitElement {
     // loop through the Array of changes
     changedProperties.forEach((oldValue, propName) => {
       //console.log(`${propName} changed. ${this[propName]}`);
-      if (propName === 'src') {
+      if (propName === 'src' && this[propName]) {
         // re-render the document; this frags the light dom of this tag
         this.teiRender();
       }
-      if (propName === 'mode') {
+      if (propName === 'mode' && this[propName]) {
         this._modeChanged(this[propName]);
       }
     });
-  }
+  } 
   /**
    * mode changed callback
    */
@@ -304,17 +306,15 @@ export class TeiRender extends LitElement {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    import("@lrnwebcomponents/simple-toast/simple-toast.js").then(() => {
-      this.dispatchEvent(new CustomEvent("simple-toast-show", {
-        bubbles: true,
-        composed: true,
-        cancelable: true,
-        detail: {
-          text: `Copied link ${this.currentLineId} to your clipboard`,
-          duration: 3000
-        }
-      }));
-    });
+    this.dispatchEvent(new CustomEvent("simple-toast-show", {
+      bubbles: true,
+      composed: true,
+      cancelable: true,
+      detail: {
+        text: `Copied link ${this.currentLineId} to your clipboard`,
+        duration: 3000
+      }
+    }));
   }
 
 
