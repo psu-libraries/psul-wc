@@ -861,6 +861,12 @@ tei-lb[rend="indent"]:before {
   content: '\a';
   white-space: pre;
 } */
+tei-lb[data-empty=""] {
+  content-visibility: hidden;
+  display: block;
+  font-size: 0em;
+  height: 0;
+}
 tei-lbl {
   /* Empty Rule Set */
 }
