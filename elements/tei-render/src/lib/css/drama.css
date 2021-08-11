@@ -804,6 +804,8 @@ tei-lg > tei-l:first-of-type {
   display: block;
   padding-left: 0em;
   margin-left: 5.95em;
+}
+tei-speaker + tei-lg > tei-l:first-of-type {
   margin-top: -1.45em;
 }
 tei-lacunaEnd {
