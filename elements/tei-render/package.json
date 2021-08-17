@@ -1,6 +1,6 @@
 {
   "name": "@psul/tei-render",
-  "version": "0.0.34",
+  "version": "0.0.40",
   "description": "Webcomponent tei-render following open-wc recommendations",
   "author": "tei-render",
   "license": "MIT",
@@ -20,22 +20,19 @@
     "test:watch": "karma start --auto-watch=true --single-run=false",
     "test:update-snapshots": "karma start --update-snapshots",
     "test:prune-snapshots": "karma start --prune-snapshots",
-    "test:bs": "karma start karma.bs.config.js --coverage",
-    "storybook": "start-storybook --node-resolve --watch --open",
-    "storybook:build": "build-storybook"
+    "test:bs": "karma start karma.bs.config.js --coverage"
   },
   "dependencies": {
-    "@lrnwebcomponents/anchor-behaviors": "^3.0.5",
-    "@lrnwebcomponents/simple-toast": "^3.0.6",
-    "@lrnwebcomponents/simple-modal": "^3.0.6",
-    "@lrnwebcomponents/simple-popover": "^3.0.7",
-    "@lrnwebcomponents/absolute-position-behavior": "^3.0.7",
-    "@lrnwebcomponents/simple-icon": "^3.0.6",
-    "@lrnwebcomponents/simple-tooltip": "^3.0.5",
+    "@lrnwebcomponents/anchor-behaviors": "^4.0.0" ,
+    "@lrnwebcomponents/simple-toast": "^4.0.0",
+    "@lrnwebcomponents/simple-modal": "^4.0.0",
+    "@lrnwebcomponents/simple-popover": "^4.0.0",
+    "@lrnwebcomponents/absolute-position-behavior": "^4.0.0",
+    "@lrnwebcomponents/simple-icon": "^4.0.0",
+    "@lrnwebcomponents/simple-tooltip": "^4.0.0",
     "lit-element": "2.5.1"
   },
   "devDependencies": {
-    "@open-wc/demoing-storybook": "^1.0.1",
     "@open-wc/eslint-config": "^2.0.0",
     "@open-wc/prettier-config": "^0.1.10",
     "@open-wc/testing": "^2.0.0",
